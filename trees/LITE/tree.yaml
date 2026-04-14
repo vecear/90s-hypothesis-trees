@@ -271,8 +271,8 @@ scenarios:
       - "毛利率突破 45% non-GAAP"
       - "Project Vanguard 準時量產"
     my_probability: 0.35
-    market_implied_probability: 0.20
-    source: "賣方高端目標價 range top"
+    market_implied_probability: 0.92  # 2026-04-14 daily monitor 更新：現價 $871.18 反推，假設 p_bear=5%
+    source: "賣方高端目標價 range top；JPMorgan 2026-04-09 調升至 $950"
     change_from_v100: "+5pp（Nvidia 投資強化上行）"
 
   base:
@@ -283,8 +283,8 @@ scenarios:
       - "OCS 穩定貢獻"
       - "CPO 2027 分食 10-15% 高階市場，LITE 透過上游 InP 部分補回"
     my_probability: 0.45
-    market_implied_probability: 0.55
-    source: "共識目標中位 $620-$691"
+    market_implied_probability: 0.03  # 2026-04-14 daily monitor 更新；現價 $871 大幅超越 Base $650，市場幾乎全押 Bull
+    source: "共識目標中位 $620-$691；現價突破 Base，市場定價 Base 機率極低"
     change_from_v100: "-5pp"
 
   bear:
@@ -295,16 +295,16 @@ scenarios:
       - "Project Vanguard capex 超支"
       - "InP 產能擴出後出現過剩"
     my_probability: 0.20
-    market_implied_probability: 0.25
+    market_implied_probability: 0.05  # 2026-04-14 daily monitor 更新（假設值）
     source: "賣方低端目標價 $455"
     change_from_v100: "unchanged"
 
 valuation:
-  current_price: 0  # TBD — 待填入最新收盤價（預計 4/14 收盤後 monitor 自動抓取）
-  expected_value: 0  # 計算待 current_price 填入
-  risk_reward_ratio: 0.0  # 計算待 current_price 填入
-  mispricing_edge: "Bull p 差 +15pp（我 35% vs 市場 20%）；Base p 差 -10pp；Bear p 差 -5pp——綜合傾向偏多；需 current_price 驗證"
-  notes: "v1.1.0 calculation pending current price"
+  current_price: 871.18  # 2026-04-14 盤中確認值（4/14 盤中 $871.18；前收 $856.43 +1.72% DoD）
+  expected_value: -173  # EV = 0.35×900 + 0.45×650 + 0.20×455 − 871.18 = 698.5 − 871.18 = −172.7
+  risk_reward_ratio: 0.07  # (900−871.18)/(871.18−455) = 28.82/416.18 = 0.069
+  mispricing_edge: "⚠️ 現價 $871.18 超越 Base 情境 $650，逼近 Bull $900。EV/P = −19.8%，市場隱含 Bull p ≈ 92%（vs 我 35%）——差距 −57pp。安全邊際極低，R/R = 0.07x（每 $1 上行對應 $14 下行）。4/14 收復昨日跌幅 +1.72%，關稅衝擊確認極微正面，但賠率未改善。持有需有強信心 Bull 情境實現，或等待回調至 $700–750 改善賠率。"
+  notes: "2026-04-14 daily monitor 確認。4/14 盤中 $871.18（+1.72% DoD，收復 4/13 −4.6% 部分）。關稅衝擊確認『極低』，產品豁免半導體關稅，主要生產在日本/英國/泰國。Q3 FY26 財報預計 2026-05-05，指引 $780-830M（+85% YoY）。情境（Bull $900 / Base $650 / Bear $455）為 12 個月目標。JPMorgan PT $950；Needham PT $850；Rosenblatt PT $900；MS PT $595；TD Cowen Hold PT $675。"
 
 # ============================================
 # 監控設定
@@ -347,3 +347,19 @@ sources:
   - "Bloomberg estimate: Ciena 22%, Google 21% of LITE revenue (2026)"
   - "OFC 2026: LITE full scale-out/up/across demo (Businesswire 2026-03-17)"
   - "Project Vanguard $3.8B US manufacturing expansion"
+  - "LITE $474.6M convertible notes → 5.7M shares exchange (2026-04-07) https://www.stocktitan.net/sec-filings/LITE/8-k-lumentum-holdings-inc-reports-material-event-e0d77648ecca.html"
+  - "JPMorgan raises LITE PT from $565 to $950, Overweight (2026-04-09) https://markets.financialcontent.com/stocks/article/marketminute-2026-4-9-the-optical-supercycle-jpmorgan-vaults-lumentum-to-new-heights-as-ai-networking-breaks-the-copper-wall"
+  - "Hyperscaler 2026 combined capex $630-700B (+67% YoY): Amazon $200B, Alphabet $175-185B, Meta $115-135B, MSFT $110-120B"
+  - "EML Bottleneck 2026: supply shortfall 36% projected (TrendForce/SDxCentral)"
+  - "Broadcom Bailly CPO: >50,000 Tomahawk 5 CPO switches shipped 2025 (Digitimes)"
+  - "AAOI +20% on $124M hyperscale orders 800G (2026-04) https://blockonomi.com/applied-optoelectronics-aaoi-stock-soars-20-on-124m-hyperscale-customer-orders/"
+  - "Fabrinet Q2 FY26 optical comms revenue $833M (+29% YoY)"
+  - "LITE 2026-04-13 close $856.43 (−4.6%, market volatility) https://nationaltoday.com/us/ca/san-jose/news/2026/04/13/lumentum-shares-dip-4-6-amid-market-volatility/"
+  - "LITE 2026-04-14 intraday $871.18 (+1.72% DoD), recovers partial 4/13 loss"
+  - "Credo acquires DustPhotonics (SiPho PICs 400G/800G/1.6T/3.2T), 2026-04-13 https://www.morningstar.com/news/business-wire/20260413933103/credo-agrees-to-acquire-dustphotonics-accelerating-expansion-into-silicon-photonics-and-next-generation-optical-connectivity"
+  - "COHR stock $313.42 (+1.78%, 2026-04-14); 14 analysts Buy consensus"
+  - "Analyst consensus: JPMorgan PT $950, Needham PT $850, Rosenblatt PT $900, Morgan Stanley PT $595, TD Cowen Hold PT $675 (Apr 2026)"
+  - "LITE tariff impact confirmed 'quite minimal'; products exempt from semiconductor tariffs; production Japan/UK/Thailand (optics.org 2026)"
+  - "Q3 FY2026 earnings scheduled 2026-05-05; guidance $780-830M rev (+85% YoY), non-GAAP EPS $2.15-2.35"
+  - "Bloomberg 2026-04-10: Nvidia-Backed Lumentum Sees AI Filling Orders Through 2028 https://www.bloomberg.com/news/articles/2026-04-10/nvidia-backed-lumentum-sees-ai-filling-orders-through-2028"
+  - "COHR Q2 FY26: beats EPS $1.29 (vs $1.21 est), revenue $1.69B (+17% YoY); Q3 guidance $1.7-1.84B"
