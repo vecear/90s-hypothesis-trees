@@ -169,11 +169,11 @@ branches:
         data_source: "10-Q cash flow + capex guidance + Nvidia 策略投資"
         data_url: "https://www.sec.gov/"
         check_frequency: "quarterly"
-        conclusion: "Project Vanguard 美國擴廠 $3.8B + 日本 InP +$100M→$250M 是高強度 capex；但 Nvidia 2026/3 直接投資 $2B（一半投入產能擴張）大幅緩解 FCF 壓力；2026/4/7 以 5.7M 股換回 $474.6M 可轉債（2026+2029），負債顯著降低"
+        conclusion: "Project Vanguard 美國擴廠 $3.8B + 日本 InP +$100M→$250M 是高強度 capex；但 Nvidia 2026/3 直接投資 $2B（一半投入產能擴張）大幅緩解 FCF 壓力"
         kill_condition: "Capex/Sales > 25% 且 FCF 連兩季為負、且無新外部資金"
         current_status: "🟡"
         last_checked: 2026-04-14
-        last_value: "Project Vanguard $3.8B commit；Nvidia $2B investment；$474.6M 可轉債換股（2026-04-07）"
+        last_value: "Project Vanguard $3.8B commit；Nvidia $2B strategic investment (2026-03)"
 
       - id: H-1C-leaf-3
         hypothesis: "InP 晶圓與 EML 封裝瓶頸解除速度不快於需求成長"
@@ -271,7 +271,7 @@ scenarios:
       - "毛利率突破 45% non-GAAP"
       - "Project Vanguard 準時量產"
     my_probability: 0.35
-    market_implied_probability: 0.86  # 2026-04-14 更新：現價 $855 反推，假設 p_bear=5%
+    market_implied_probability: 0.86  # 2026-04-14 monitor 更新：現價 $856 反推，假設 p_bear=5%
     source: "賣方高端目標價 range top；JPMorgan 2026-04-09 調升至 $950"
     change_from_v100: "+5pp（Nvidia 投資強化上行）"
 
@@ -283,8 +283,8 @@ scenarios:
       - "OCS 穩定貢獻"
       - "CPO 2027 分食 10-15% 高階市場，LITE 透過上游 InP 部分補回"
     my_probability: 0.45
-    market_implied_probability: 0.09  # 2026-04-14 更新
-    source: "共識目標中位 $620-$691；現價已突破 Base，市場定價 Base 機率極低"
+    market_implied_probability: 0.09  # 2026-04-14 monitor 更新；現價已大幅超越 Base，市場幾乎不定價 Base 情境
+    source: "共識目標中位 $620-$691；現價突破 Base，市場定價 Base 機率極低"
     change_from_v100: "-5pp"
 
   bear:
@@ -295,16 +295,16 @@ scenarios:
       - "Project Vanguard capex 超支"
       - "InP 產能擴出後出現過剩"
     my_probability: 0.20
-    market_implied_probability: 0.05  # 2026-04-14 更新
+    market_implied_probability: 0.05  # 2026-04-14 monitor 更新
     source: "賣方低端目標價 $455"
     change_from_v100: "unchanged"
 
 valuation:
-  current_price: 855  # 2026-04-14 估計值（日盤中：開盤 $888.29，區間 $841.05–$905.90）
-  expected_value: -157  # EV = 0.35×900 + 0.45×650 + 0.20×455 − 855 = 698.5 − 855 = −156.5
-  risk_reward_ratio: 0.11  # (900−855)/(855−455) = 45/400
-  mispricing_edge: "⚠️ 現價 $855 超越 Base 情境 $650，接近 Bull $900。我判 EV/P = −18.3%，表示按我的機率權重股票已偏貴。市場隱含 Bull p ≈ 86%（vs 我 35%）——市場正在定價「幾乎必然的牛市」。安全邊際極低，R/R = 0.11x（每 $1 上行對應 $9 下行）。持有需有強信心 Bull 情境實現，或等待回調。"
-  notes: "2026-04-14 首次填入。情境價格（Bull $900 / Base $650 / Bear $455）為 12 個月目標。JPMorgan 最新 PT = $950，顯示 Bull 情境可能需上修。"
+  current_price: 856  # 2026-04-14 daily monitor 確認值（4/13 收盤 $856.43；開盤 $888.29，區間 $841.05–$905.90）
+  expected_value: -158  # EV = 0.35×900 + 0.45×650 + 0.20×455 − 856 = 698.5 − 856 = −157.5
+  risk_reward_ratio: 0.11  # (900−856)/(856−455) = 44/401 = 0.110
+  mispricing_edge: "⚠️ 現價 $856 超越 Base 情境 $650，接近 Bull $900。我判 EV/P = −18.5%，市場隱含 Bull p ≈ 86%（vs 我 35%）——差距 −51pp。安全邊際極低，R/R = 0.11x（每 $1 上行對應 $9 下行）。4/13 大盤波動（關稅憂慮）使股價單日 −4.6%，但基本面未變。持有需有強信心 Bull 情境實現，或等待回調至 $700–750 改善賠率。"
+  notes: "2026-04-14 首次 daily monitor 確認。4/13 收盤 $856.43（−4.6% 因廣泛市場下跌）；4/14 盤中數據待確認。情境（Bull $900 / Base $650 / Bear $455）為 12 個月目標。JPMorgan PT $950 顯示 Bull 情境可能需上修；平均分析師 PT ~$637-745 仍低於現價。"
 
 # ============================================
 # 監控設定
@@ -344,14 +344,18 @@ sources:
   - "Nvidia $2B strategic investment in LITE + $2B in Coherent (total $4B CPO, 2026-03, SiliconANGLE) https://siliconangle.com/2026/03/02/nvidia-invests-4b-co-packaged-optics-suppliers-lumentum-coherent/"
   - "Nvidia GTC 2026: Quantum-X/Spectrum-X CPO, Feynman NVLink 8 CPO (2028)"
   - "Coherent Q2 FY26 earnings: non-GAAP GM 39.0% (vs LITE 42.5%); Q3 guidance rev $1.7-1.84B"
+  - "Coherent OFC 2026 CPO with InP ELS module demo https://www.ico-optics.org/coherent-showcases-multiple-co-packaged-optics-cpo-innovations-at-ofc-2026/"
   - "Bloomberg estimate: Ciena 22%, Google 21% of LITE revenue (2026)"
-  - "OFC 2026: LITE full scale-out/up/across demo (Businesswire 2026-03-17)"
+  - "OFC 2026: LITE full scale-out/up/across demo (Businesswire 2026-03-17) https://www.businesswire.com/news/home/20260317080634/"
   - "Project Vanguard $3.8B US manufacturing expansion"
   - "LITE $474.6M convertible notes → 5.7M shares exchange (2026-04-07) https://www.stocktitan.net/sec-filings/LITE/8-k-lumentum-holdings-inc-reports-material-event-e0d77648ecca.html"
   - "JPMorgan raises LITE PT from $565 to $950, Overweight (2026-04-09) https://markets.financialcontent.com/stocks/article/marketminute-2026-4-9-the-optical-supercycle-jpmorgan-vaults-lumentum-to-new-heights-as-ai-networking-breaks-the-copper-wall"
   - "Hyperscaler 2026 combined capex $630-700B (+67% YoY): Amazon $200B, Alphabet $175-185B, Meta $115-135B, MSFT $110-120B"
   - "EML Bottleneck 2026: supply shortfall 36% projected (TrendForce/SDxCentral)"
   - "Broadcom Bailly CPO: >50,000 Tomahawk 5 CPO switches shipped 2025 (Digitimes)"
-  - "AAOI +20% on $124M hyperscale orders 800G + $200M 1.6T contract (2026-04)"
+  - "AAOI +20% on $124M hyperscale orders 800G (2026-04) https://blockonomi.com/applied-optoelectronics-aaoi-stock-soars-20-on-124m-hyperscale-customer-orders/"
   - "Fabrinet Q2 FY26 optical comms revenue $833M (+29% YoY)"
-  - "LITE 2026-04-14 estimated price $855 (intraday range $841.05–$905.90, open $888.29)"
+  - "LITE 2026-04-13 close $856.43 (−4.6%, market volatility) https://nationaltoday.com/us/ca/san-jose/news/2026/04/13/lumentum-shares-dip-4-6-amid-market-volatility/"
+  - "Credo acquires DustPhotonics (SiPho PICs 400G/800G/1.6T/3.2T), 2026-04-13 https://www.morningstar.com/news/business-wire/20260413933103/credo-agrees-to-acquire-dustphotonics-accelerating-expansion-into-silicon-photonics-and-next-generation-optical-connectivity"
+  - "COHR stock $307.50 (+8.21%, 2026-04-10); 14 analysts Buy consensus"
+  - "Analyst consensus average PT $637-745; high $1,225; low $455 (22 analysts, Apr 2026)"
