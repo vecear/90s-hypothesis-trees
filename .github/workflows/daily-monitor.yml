@@ -1,0 +1,38 @@
+name: Daily Tree Monitor
+
+# 預設停用 cron；需要 GitHub Actions 排程時取消註解
+# on:
+#   schedule:
+#     - cron: '0 22 * * 0-4'  # UTC 22:00 = TPE 06:00 (週一~五)
+#   workflow_dispatch:
+
+on:
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install anthropic pyyaml requests
+
+      - name: Run monitor (all tickers)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python scripts/monitor.py --all
+
+      - name: Commit updated trees
+        run: |
+          git config user.name "90s-bot"
+          git config user.email "bot@90s.pm"
+          git add trees/
+          git diff --cached --quiet || git commit -m "chore(monitor): daily update $(date -u +%Y-%m-%d)"
+          git push

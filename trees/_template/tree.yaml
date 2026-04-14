@@ -1,0 +1,120 @@
+# 90s Hypothesis Tree Template
+# 複製此檔至 trees/[TICKER]/tree.yaml 並填入內容
+
+ticker: TICKER
+company_name: "Company Full Name"
+version: 1.0.0
+created: 2026-04-14
+updated: 2026-04-14
+
+# Step 1: 敘事偵測輸出
+narrative:
+  market_story: "市場正在講的故事（一句話）"
+  implied_assumptions:
+    - "隱含假設 1"
+    - "隱含假設 2"
+  pricing_logic: "市場的定價邏輯"
+  narrative_error_type: "身份錯誤 / 永久性假設 / 生命週期錯位 / 敘事慣性 / 事件概率 / 宏觀傳染"
+  mispricing_hotspot: "最可能的錯誤定價來源"
+
+# Step 2: 核心假設 H-0
+h0:
+  statement: "H-0 核心命題（一句話可回答 是/否）"
+  falsifiability: "什麼數據出現代表 H-0 被推翻"
+  kill_condition: "具體 Kill Condition（含數字與時間窗口）"
+  current_status: "🟢"  # 🟢 未否定 / 🟡 警戒 / 🔴 已否定
+
+# Step 3: 假設樹
+tree_structure: "公式 / 流程 / 對立面"  # 選一種畫法
+
+branches:
+  - id: H-1A
+    name: "分枝名稱"
+    framework: "波特五力"  # 來自 Preloaded Framework Library
+    framework_rationale: "為什麼選這個框架（一句話）"
+    core_question: "這根分枝要回答的白話問題"
+    leaves:
+      - id: H-1A-leaf-1
+        hypothesis: "可回答是/否的判斷"
+        data_source: "EIA 月度報告"
+        data_url: "https://..."
+        check_frequency: "monthly"  # daily / weekly / monthly / quarterly
+        conclusion: "預期結果"
+        kill_condition: "什麼數據出現從綠變紅"
+        current_status: "🟢"
+        last_checked: 2026-04-14
+        last_value: ""
+
+  - id: H-1B
+    name: "分枝名稱"
+    framework: ""
+    framework_rationale: ""
+    core_question: ""
+    leaves: []
+
+  - id: H-1C
+    name: ""
+    framework: ""
+    framework_rationale: ""
+    core_question: ""
+    leaves: []
+
+  - id: H-1D
+    name: ""
+    framework: ""
+    framework_rationale: ""
+    core_question: ""
+    leaves: []
+
+# Step 5: 情景估值
+scenarios:
+  bull:
+    price: 0
+    assumptions:
+      - "牛市關鍵假設 1"
+    my_probability: 0.0
+    market_implied_probability: 0.0
+  base:
+    price: 0
+    assumptions:
+      - "基準假設"
+    my_probability: 0.0
+    market_implied_probability: 0.0
+  bear:
+    price: 0
+    assumptions:
+      - "熊市關鍵假設 1"
+    my_probability: 0.0
+    market_implied_probability: 0.0
+
+valuation:
+  current_price: 0
+  expected_value: 0  # Σ(p_我 × V) - P₀
+  risk_reward_ratio: 0.0  # (V_bull - P₀) / (P₀ - V_bear)
+  mispricing_edge: ""  # 「Bull 差 +18pp → 市場低估上行 → 做多」
+
+# 監控設定
+monitoring:
+  enabled: true
+  schedule: "0 6 * * 1-5"  # cron，台灣時區
+  timezone: "Asia/Taipei"
+  channels:
+    slack:
+      enabled: false
+      webhook_url: ""
+      channel: "#ticker-tree"
+    email:
+      enabled: false
+      to: ""
+    obsidian:
+      enabled: true
+      path: "C:/vecear-obsidian/All/wiki/"
+    github_commit:
+      enabled: true
+
+# Scorecard 統計（每日監控更新）
+scorecard:
+  green: 0
+  yellow: 0
+  red: 0
+  last_updated: 2026-04-14
