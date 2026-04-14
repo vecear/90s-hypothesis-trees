@@ -1,0 +1,28 @@
+name: Auto-send Monitor Draft
+
+# 工作流程：用 IMAP 從 Gmail 草稿匣抓 [LITE] 開頭的最新草稿，
+# 透過 SMTP 寄給自己，然後刪除草稿以免堆積。
+# 排程：工作日 06:30 TPE = 22:30 UTC 前一天（週日~四）
+# 也可手動觸發（Actions → Run workflow）
+
+on:
+  schedule:
+    - cron: '30 22 * * 0-4'
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Send latest monitor draft
+        env:
+          GMAIL_USERNAME: ${{ secrets.GMAIL_USERNAME }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python scripts/send_draft.py
