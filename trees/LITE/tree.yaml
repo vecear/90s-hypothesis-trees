@@ -1,0 +1,313 @@
+# Lumentum Holdings (LITE) — 90s Hypothesis Tree
+# 產業：光通訊元件 / AI 光互連 / OCS / InP 雷射
+# 財年制：LITE 為 6 月結帳；Q2 FY2026 = 2025-10 ~ 2025-12 季
+
+ticker: LITE
+company_name: "Lumentum Holdings Inc."
+version: 1.0.0
+created: 2026-04-14
+updated: 2026-04-14
+
+# ============================================
+# Step 1 — 敘事偵測
+# ============================================
+narrative:
+  market_story: "AI 光互連核心供應商，1.6T supercycle 與 OCS backlog 延伸至 2028"
+  implied_assumptions:
+    - "1.6T ramp 持續 2-3 年至少至 2027"
+    - "InP 雷射產能瓶頸支撐高毛利，不會被 CPO 快速顛覆"
+    - "大型 hyperscaler（Google/Meta/Microsoft）資本支出不會在 2026 見頂"
+    - "OCS 是可延續的第二成長引擎，非一次性專案"
+  pricing_logic: "從 EV/EBITDA 光元件週期邏輯 → 轉向 AI 受益股 forward P/E + backlog 能見度溢價"
+  narrative_error_type: "生命週期錯位（暫時）：市場已 reframe，但可能仍低估 backlog 延伸度與 InP 毛利上行"
+  mispricing_hotspot: "市場在 fwd-12M 視野內 pricing AI continuation，但對 2027-2028 的 OCS + 1.6T 延續 discount 過深；或反向：CPO 顛覆威脅在 24 個月內被低估。主軸判斷：偏向前者。"
+
+# ============================================
+# Step 2 — 核心假設 H-0
+# ============================================
+h0:
+  statement: "LITE 的 Cloud & Networking segment 未來 8 季（至 2027 Q4）的年化毛利金額將超過當前賣方共識 ≥15%，因市場仍部分用光元件週期邏輯給 2027+ 年度折價，並低估 InP 產能稀缺帶來的 pricing power 與 OCS 成長延伸。"
+  direction: "long"
+  falsifiability: "Cloud 毛利金額 YoY 成長率連續兩季低於 15%；或 backlog from 2028 被下修 >30%"
+  kill_condition: "(1) 連續兩季 Cloud & Networking segment 營收 YoY < 40%；或 (2) 任一 Top-3 hyperscaler 公開宣布 AI cluster 主力改採 CPO / Silicon Photonics 非 LITE 供應；或 (3) 公司下修 FY27 展望 >20%"
+  current_status: "🟢"
+
+# ============================================
+# Step 3 — 樹結構
+# ============================================
+tree_structure: "對立面（AI 受益分部 vs 拖累分部）＋分項組合"
+
+branches:
+
+  # ------------------------------------------
+  - id: H-1A
+    name: "Cloud & Networking — AI 光互連引擎"
+    framework: "波特五力"
+    framework_rationale: "評估光模組市場供需緊俏度（InP 供給稀缺）與 hyperscaler 買方議價力的平衡，判斷 LITE 目前享有的 pricing power 是否結構性"
+    core_question: "1.6T / OCS 訂單的可持續性能撐過 8 個季度嗎？"
+    leaves:
+      - id: H-1A-leaf-1
+        hypothesis: "Top-3 hyperscaler 對 LITE 的年度採購 YoY 成長 ≥ 40%"
+        data_source: "公司 10-K 客戶集中度揭露 + hyperscaler capex guidance"
+        data_url: "https://investor.lumentum.com/"
+        check_frequency: "quarterly"
+        conclusion: "已知 Q3 FY26 guidance $805M 中位代表 +85% YoY，遠超 40% 門檻"
+        kill_condition: "連續兩季 YoY < 40%"
+        current_status: "🟢"
+        last_checked: 2026-04-14
+        last_value: "Q3 FY26 guidance 中位 +85% YoY"
+
+      - id: H-1A-leaf-2
+        hypothesis: "InP 雷射產能 allocation runway ≥ 18 個月"
+        data_source: "法說會 commentary + 日本廠產能公告"
+        data_url: "https://fool.com/earnings/call-transcripts/"
+        check_frequency: "quarterly"
+        conclusion: "目前揭露 InP 產能被訂走 32 個月，遠超 18 個月門檻"
+        kill_condition: "allocation runway < 12 個月（代表需求快速走弱或替代方案介入）"
+        current_status: "🟢"
+        last_checked: 2026-04-14
+        last_value: "32 months allocated (2026-04)"
+
+      - id: H-1A-leaf-3
+        hypothesis: "OCS backlog 延伸至 2027+"
+        data_source: "公司公告 OCS backlog 數字"
+        data_url: "https://investor.lumentum.com/"
+        check_frequency: "quarterly"
+        conclusion: "OCS backlog 已突破 $400M，backlog 延伸至 2028"
+        kill_condition: "backlog 下修 >30% 或 OCS 季營收 QoQ 連續兩季下滑"
+        current_status: "🟢"
+        last_checked: 2026-04-14
+        last_value: "OCS backlog >$400M，訂單覆蓋至 2028"
+
+      - id: H-1A-leaf-4
+        hypothesis: "1.6T 模組量產認證進度不落後 Coherent (COHR) 與 Fabrinet"
+        data_source: "LITE vs COHR 法說會 + 同業產品公告 + LightCounting / Dell'Oro 報告"
+        data_url: "https://www.lightcounting.com/"
+        check_frequency: "quarterly"
+        conclusion: "TBD — 需從最新兩家同業法說交叉比對"
+        kill_condition: "COHR 或 Fabrinet 取得超過 LITE 的 1.6T 重要認證時程優勢"
+        current_status: "🟡"
+        last_checked: 2026-04-14
+        last_value: "需補充"
+
+      - id: H-1A-leaf-5
+        hypothesis: "單一最大客戶營收集中度 < 30%"
+        data_source: "10-K / 10-Q Concentration of Credit Risk 段落"
+        data_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001633978"
+        check_frequency: "quarterly"
+        conclusion: "TBD — 需讀最新 10-Q"
+        kill_condition: "單一客戶集中度 > 40%"
+        current_status: "🟡"
+        last_checked: 2026-04-14
+        last_value: "需補充"
+
+  # ------------------------------------------
+  - id: H-1B
+    name: "Industrial & Consumer — Legacy 分部"
+    framework: "行業生命週期"
+    framework_rationale: "判斷 Consumer（Apple 3D sensing）是處於衰退末期還是穩定底部；Industrial laser 是否進入新採用週期"
+    core_question: "非 AI 分部是止血還是繼續拖累？"
+    leaves:
+      - id: H-1B-leaf-1
+        hypothesis: "Industrial & Consumer segment 營收 QoQ 不再負成長"
+        data_source: "公司 segment reporting"
+        data_url: "https://investor.lumentum.com/"
+        check_frequency: "quarterly"
+        conclusion: "TBD — 需從最新 Q 分部數據確認"
+        kill_condition: "連續兩季 QoQ 下滑 >10%"
+        current_status: "🟡"
+        last_checked: 2026-04-14
+        last_value: "需補充"
+
+      - id: H-1B-leaf-2
+        hypothesis: "Industrial & Consumer segment 毛利率不再是負拖累（接近或高於公司平均）"
+        data_source: "segment operating margin"
+        data_url: "https://investor.lumentum.com/"
+        check_frequency: "quarterly"
+        conclusion: "TBD"
+        kill_condition: "segment 營業利益率 < 0 且連兩季擴大"
+        current_status: "🟡"
+        last_checked: 2026-04-14
+        last_value: "需補充"
+
+      - id: H-1B-leaf-3
+        hypothesis: "Apple 3D sensing 年度揭露無 major design-out 風險"
+        data_source: "Apple 供應鏈追蹤（DSCC / Nikkei） + LITE 法說 Q&A"
+        data_url: "https://www.nikkei.com/"
+        check_frequency: "quarterly"
+        conclusion: "TBD"
+        kill_condition: "Apple 公開或供應鏈確認 3D sensing 換至非 LITE 供應商"
+        current_status: "🟡"
+        last_checked: 2026-04-14
+        last_value: "需補充"
+
+  # ------------------------------------------
+  - id: H-1C
+    name: "毛利率 × 產能 × 成本結構"
+    framework: "價值鏈分析"
+    framework_rationale: "InP → EML → 模組 → 系統四層價值鏈中，LITE 卡位最接近瓶頸環節（InP + EML），判斷利潤池能否向 LITE 端集中"
+    core_question: "營收成長時，毛利率能同步擴張還是被成本/競爭吃掉？"
+    leaves:
+      - id: H-1C-leaf-1
+        hypothesis: "非 GAAP 毛利率季 QoQ 持續擴張至 ≥ 40%"
+        data_source: "公司 non-GAAP gross margin guidance"
+        data_url: "https://investor.lumentum.com/"
+        check_frequency: "quarterly"
+        conclusion: "Q2 FY26 非 GAAP 營業利益率 YoY +1,700bps，毛利率同步擴張但具體水位需補"
+        kill_condition: "連續兩季毛利率 QoQ 下降"
+        current_status: "🟢"
+        last_checked: 2026-04-14
+        last_value: "+1,700bps operating margin YoY (Q2 FY26)"
+
+      - id: H-1C-leaf-2
+        hypothesis: "Capex / Sales 比率可控（< 15%）且產能擴張能兌現"
+        data_source: "10-Q cash flow + capex guidance"
+        data_url: "https://www.sec.gov/"
+        check_frequency: "quarterly"
+        conclusion: "日本 InP 產能過去 24 個月擴 12 倍；需看現金流壓力"
+        kill_condition: "Capex/Sales > 25% 且 FCF 連兩季為負"
+        current_status: "🟡"
+        last_checked: 2026-04-14
+        last_value: "需補充 FCF 數字"
+
+      - id: H-1C-leaf-3
+        hypothesis: "InP 晶圓與 EML 封裝瓶頸解除速度不快於需求成長"
+        data_source: "公司產能公告 + 客戶等待期評論"
+        data_url: "https://investor.lumentum.com/"
+        check_frequency: "quarterly"
+        conclusion: "目前產能解除速度慢於需求，供給緊俏持續"
+        kill_condition: "公司宣布產能追上需求，或 lead time 縮短至 < 6 個月"
+        current_status: "🟢"
+        last_checked: 2026-04-14
+        last_value: "InP 產能 fully allocated 32 months"
+
+  # ------------------------------------------
+  - id: H-1D
+    name: "競爭格局與顛覆性威脅（CPO / Silicon Photonics）"
+    framework: "顛覆性創新（Christensen）"
+    framework_rationale: "判斷 CPO / Silicon Photonics 是 sustaining innovation（LITE 能跟進）還是 disruptive（會從低階切入替代 InP）；實質選擇權評估 LITE 的卡位"
+    core_question: "CPO / Nvidia 自研 optics / Broadcom 內部整合，24 個月內會吃掉 LITE 多少份額？"
+    leaves:
+      - id: H-1D-leaf-1
+        hypothesis: "CPO 商業化部署量在 2027 年全年 < 10%（佔高速光互連出貨）"
+        data_source: "LightCounting / Dell'Oro / Yole 報告"
+        data_url: "https://www.lightcounting.com/"
+        check_frequency: "quarterly"
+        conclusion: "TBD — 需最新 LightCounting forecast"
+        kill_condition: "CPO 2027 部署量預測 >15%"
+        current_status: "🟡"
+        last_checked: 2026-04-14
+        last_value: "需補充"
+
+      - id: H-1D-leaf-2
+        hypothesis: "Nvidia / Broadcom 未公開推進 2027 前量產的 CPO roadmap"
+        data_source: "GTC / OCP / Hot Chips 會議 + 兩家法說評論"
+        data_url: "https://www.nvidia.com/gtc/"
+        check_frequency: "quarterly"
+        conclusion: "TBD — 2026 年 GTC 內容需追蹤"
+        kill_condition: "Nvidia 或 Broadcom 宣布 2026-2027 CPO 量產排程明確"
+        current_status: "🟡"
+        last_checked: 2026-04-14
+        last_value: "需補充"
+
+      - id: H-1D-leaf-3
+        hypothesis: "Coherent (COHR) 在同級產品線（EML / 高速 transceiver）毛利率與量能未超越 LITE"
+        data_source: "COHR 10-Q + LITE 10-Q 逐項比對"
+        data_url: "https://www.sec.gov/"
+        check_frequency: "quarterly"
+        conclusion: "TBD — 需下一輪同業季報對比"
+        kill_condition: "COHR 同產品線毛利率連兩季高於 LITE >500bps"
+        current_status: "🟡"
+        last_checked: 2026-04-14
+        last_value: "需補充"
+
+      - id: H-1D-leaf-4
+        hypothesis: "LITE 保持 200G-per-lane EML 市佔 ≥ 45%"
+        data_source: "Yole Développement / LightCounting 市佔報告"
+        data_url: "https://www.yolegroup.com/"
+        check_frequency: "quarterly"
+        conclusion: "目前 50-60%"
+        kill_condition: "市佔 < 45% 且 QoQ 下滑"
+        current_status: "🟢"
+        last_checked: 2026-04-14
+        last_value: "50-60% (2026-Q1 estimate)"
+
+# ============================================
+# Step 5 — 情景估值 × 市場隱含概率
+# ============================================
+scenarios:
+  bull:
+    price: 900
+    assumptions:
+      - "OCS + 1.6T 雙引擎延伸至 2028，backlog 再上修"
+      - "InP 產能持續緊俏，毛利率突破 50% non-GAAP"
+      - "CPO 2027 部署量 < 8%，對 LITE 無實質衝擊"
+      - "Consumer 分部 2026 下半年止跌"
+    my_probability: 0.30
+    market_implied_probability: 0.20
+    source: "賣方高端目標價 range top"
+
+  base:
+    price: 650
+    assumptions:
+      - "1.6T ramp 按 guidance 兌現至 FY27"
+      - "毛利率維持 40-45% 區間"
+      - "OCS 穩定貢獻但不再大幅上修"
+      - "CPO 2027 部署量 10-15%，輕度分食"
+    my_probability: 0.50
+    market_implied_probability: 0.55
+    source: "共識目標中位"
+
+  bear:
+    price: 455
+    assumptions:
+      - "Hyperscaler capex 在 2026H2 放緩"
+      - "Nvidia / Broadcom 加速 CPO，份額從 2027 開始被吃"
+      - "InP 產能擴出後價格開始下滑"
+      - "Consumer 分部持續拖累"
+    my_probability: 0.20
+    market_implied_probability: 0.25
+    source: "賣方低端目標價"
+
+valuation:
+  current_price: 0  # TBD — 需填入最新收盤價
+  expected_value: 0  # = Σ(p_我 × V) - P₀，待 current_price 填入後計算
+  risk_reward_ratio: 0.0  # = (V_bull - P₀) / (P₀ - V_bear)，待計算
+  mispricing_edge: "預判 Bull p 差 +10pp（我 30% vs 市場 20%），因市場仍對 2027+ 延續性折價；需用 current_price 驗證此 edge 是否仍成立"
+  notes: "當前 current_price 為 0，首次 run_monitor.py 時自動抓取並更新"
+
+# ============================================
+# 監控設定
+# ============================================
+monitoring:
+  enabled: true
+  schedule: "0 6 * * 1-5"
+  timezone: "Asia/Taipei"
+  channels:
+    slack:
+      enabled: false
+      webhook_url: ""
+      channel: "#lite-tree"
+    email:
+      enabled: false
+      to: ""
+    obsidian:
+      enabled: true
+      path: "C:/vecear-obsidian/All/wiki/"
+    github_commit:
+      enabled: true
+
+# Scorecard
+scorecard:
+  green: 6
+  yellow: 10
+  red: 0
+  last_updated: 2026-04-14
+
+# 研究來源（version 1.0.0 參考）
+sources:
+  - "Q2 FY2026 Earnings Call Transcript (2026-02-03)"
+  - "Q3 FY2026 guidance midpoint $805M"
+  - "FinancialContent: Optical Dominance — Lumentum Backlog to 2028 (2026-04-10)"
+  - "LightCounting 1.6T supercycle report"
+  - "賣方共識目標：median $620-$691, range $455-$950 (2026-04)"
