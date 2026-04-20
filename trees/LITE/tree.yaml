@@ -6,7 +6,7 @@ ticker: LITE
 company_name: "Lumentum Holdings Inc."
 version: 2.0.0
 created: 2026-04-14
-updated: 2026-04-19
+updated: 2026-04-20
 changelog:
   - v1.0.0 (2026-04-14): 初始樹建立，四主幹，17 leaves
   - v1.1.0 (2026-04-14): 補足 🟡 資料、CPO 雙紅燈觸發、加入 Nvidia $2B 與 InP-to-CPO 新葉子
@@ -77,7 +77,7 @@ branches:
         conclusion: "Q3 FY26 guidance $805M 中位 = +85% YoY；2026 hyperscaler 合計 capex ~$700B（+67% YoY），Amazon $200B、Google $185B、Meta $135B"
         kill_condition: "連續兩季 YoY < 40%"
         current_status: "🟢"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "Q3 FY26 guidance +85% YoY; 2026 capex +67% YoY confirmed"
 
       - id: H-1A-leaf-2
@@ -88,7 +88,7 @@ branches:
         conclusion: "InP 已 allocated 32 個月；CEO 公開聲明『could sell out through 2028』——結構性稀缺延伸至 2028"
         kill_condition: "allocation runway < 12 個月"
         current_status: "🟢"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "32 months allocated; CEO: sold out through 2028"
 
       - id: H-1A-leaf-3
@@ -99,7 +99,7 @@ branches:
         conclusion: "OCS backlog >$400M 延伸至 2028；新增 multi-$100M CPO 訂單 due 2027"
         kill_condition: "backlog 下修 >30% 或 OCS 季營收 QoQ 連兩季下滑"
         current_status: "🟢"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "OCS backlog >$400M + new multi-year multibillion OCS agreement ($400M H2-2026 visibility confirmed); $100M+ CPO order 2027"
 
       - id: H-1A-leaf-4
@@ -110,7 +110,7 @@ branches:
         conclusion: "Google/Amazon 已 2025 認證 LITE 1.6T DR8；2026 量產；Fabrinet 為 Nvidia 1.6T 獨家組裝但 LITE 為零組件——架構差異（module vs component）"
         kill_condition: "COHR 或 Fabrinet 取得超過 LITE 的 1.6T 重要認證時程優勢"
         current_status: "🟢"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "Google/Amazon 2025 certified; 2026 ramp; 200G EML cap +40% 2025 +40% 2026"
 
       - id: H-1A-leaf-5
@@ -121,7 +121,7 @@ branches:
         conclusion: "Bloomberg 最新估：Ciena 22%、Google 21%。Top-2 合計 43%——已超越 2023 Ciena 砍單事件時的集中度；2023 precedent：Ciena 庫存調整直接讓 LITE miss Q2 財測"
         kill_condition: "單一客戶集中度 > 40%"
         current_status: "🟡"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "Ciena 22% + Google 21% (Top-2 = 43%); 2023 precedent already triggered once"
 
   # ------------------------------------------
@@ -139,7 +139,7 @@ branches:
         conclusion: "Industrial Tech ~12% of total revenue；已被策略性去優先化；絕對值不拖累但成長停滯"
         kill_condition: "連續兩季 QoQ 下滑 >10%"
         current_status: "🟡"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "~12% of total revenue (Q2 FY26)"
 
       - id: H-1B-leaf-2
@@ -150,7 +150,7 @@ branches:
         conclusion: "公司將低毛利 consumer 產能釋出給高毛利 AI，整體毛利率推升至 42.5%；分部數字未單獨揭露但 mix shift 正向"
         kill_condition: "segment 營業利益率 < 0 且連兩季擴大"
         current_status: "🟡"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "Not separately disclosed; mix shift positive"
 
       - id: H-1B-leaf-3
@@ -161,7 +161,7 @@ branches:
         conclusion: "無公開 design-out 新聞；公司主動縮編而非被動失單"
         kill_condition: "Apple 或供應鏈確認 3D sensing 換非 LITE 供應商"
         current_status: "🟢"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "No design-out reported"
 
   # ------------------------------------------
@@ -179,7 +179,7 @@ branches:
         conclusion: "Q2 FY26: 42.5%（+310bps QoQ, +820bps YoY），領先 COHR 同季 39.0%；但 EML 供給短缺 2026 預估 36%——價格壓力已被定價"
         kill_condition: "連續兩季毛利率 QoQ 下降"
         current_status: "🟢"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "42.5% (Q2 FY26, +310bps QoQ)"
 
       - id: H-1C-leaf-2
@@ -190,7 +190,7 @@ branches:
         conclusion: "Project Vanguard $3.8B commit + 日本 InP +$250M = 高強度 capex；Nvidia $2B preferred equity（非稀釋）緩解；2026-04-07 以 5.7M 股換回 $474.6M 可轉債（2026+2029）"
         kill_condition: "Capex/Sales > 25% 且 FCF 連兩季為負、且無新外部資金"
         current_status: "🟡"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "Vanguard $3.8B + Nvidia $2B + $474.6M convertible exchange"
 
       - id: H-1C-leaf-3
@@ -201,7 +201,7 @@ branches:
         conclusion: "200G EML 產能 2025 +40%、2026 +40%；EML 2026 supply shortfall 預估 36%（TrendForce）——需求持續超過供給"
         kill_condition: "公司宣布產能追上需求，或 lead time < 6 個月"
         current_status: "🟢"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "EML shortfall 36% projected 2026; InP allocated 32 months"
 
       - id: H-1C-leaf-4
@@ -212,7 +212,7 @@ branches:
         conclusion: "待查：公司尚未給 FY27 GM guidance；EML 缺口 36% 暗示 2026-2027 仍偏緊，但 2028+ 新廠 ramp 後可能鬆動"
         kill_condition: "FY27 non-GAAP GM guidance 中位 < 41%；或 mid-2028 後 lead time 下修至 <6 個月"
         current_status: "🟡"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "No FY27 GM guidance yet; shortfall 36% supports near-term"
 
   # ------------------------------------------
@@ -230,7 +230,7 @@ branches:
         conclusion: "🔴 LightCounting 確認：CPO ports 佔 2027 800G/1.6T 部署 ~30%（遠超 15% kill 門檻）；出貨從 2023 的 50K 增至 2027 的 4.5M（90x）"
         kill_condition: "CPO 2027 部署量預測 >15%"
         current_status: "🔴"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "CPO ~30% of 2027 800G/1.6T ports; 4.5M ports by 2027"
 
       - id: H-1D-leaf-2
@@ -241,7 +241,7 @@ branches:
         conclusion: "🔴 Nvidia Quantum-X CPO H2 2025 上市；Spectrum-X CPO H2 2026；Feynman NVLink 8 CPO 2028；Broadcom Bailly CPO 已出貨 >50,000 Tomahawk 5 CPO switches（Digitimes 2025）"
         kill_condition: "Nvidia 或 Broadcom 宣布 2026-2027 CPO 量產排程明確"
         current_status: "🔴"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "Nvidia Quantum-X (2025), Spectrum-X CPO (H2 2026); Broadcom Bailly shipping >50K units"
 
       - id: H-1D-leaf-3
@@ -252,7 +252,7 @@ branches:
         conclusion: "Q2 FY26: LITE 42.5% vs COHR 39.0% → 350bps 領先。COHR 長期目標 >42% 仍在追趕"
         kill_condition: "COHR 同產品線毛利率連兩季高於 LITE >500bps"
         current_status: "🟢"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "LITE 42.5% vs COHR 39.0%"
 
       - id: H-1D-leaf-4
@@ -263,7 +263,7 @@ branches:
         conclusion: "200G EML 50-60%；2025/2026 capacity +40%/+40% 持續鞏固"
         kill_condition: "市佔 < 45% 且 QoQ 下滑"
         current_status: "🟢"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "50-60% (2026-Q1 estimate)"
 
       - id: H-1D-leaf-5
@@ -274,7 +274,7 @@ branches:
         conclusion: "Nvidia 2026/3 對 LITE $2B preferred equity + multibillion 購買承諾，but 合作為 **nonexclusive**；Greensboro 廠 mid-2028 才量產——意味 2026-2028 期間 Nvidia 有空間與其他供應商合作"
         kill_condition: "任一主要 CPO 部署案宣布使用 silicon-based laser 完全取代 InP；或 Nvidia 減持/撤出 LITE 投資"
         current_status: "🟡"  # v2.0 從 🟢 降為 🟡：nonexclusive + 2028 時程
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "Nvidia $2B preferred equity (nonexclusive); Greensboro ramp mid-2028"
 
       - id: H-1D-leaf-6
@@ -285,7 +285,7 @@ branches:
         conclusion: "LITE 在 OFC 2026 展示完整 AI infrastructure 產品線，包含 CPO 整合路徑"
         kill_condition: "連兩屆 OFC LITE 未推出 CPO 相容產品或光引擎"
         current_status: "🟢"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "OFC 2026: full scale-out/up/across demo"
 
   # ------------------------------------------
@@ -304,7 +304,7 @@ branches:
         conclusion: "🟡→🔴 已確認：合作明確標示為 **nonexclusive**；公開資訊無董事席次、無 ROFR、無獨家供應。是『戰略投資 + purchase commitment』而非『獨家鎖定』"
         kill_condition: "未來 12 個月 Nvidia 公開追加投資或宣布董事席次或 ROFR 條款"
         current_status: "🔴"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "Nonexclusive confirmed; no board seat/ROFR disclosed"
 
       - id: H-1E-leaf-2
@@ -315,7 +315,7 @@ branches:
         conclusion: "目前 Nvidia 公開 CPO 平台（Quantum-X / Spectrum-X / Feynman）皆依賴外部 InP 供應；但 $2B preferred equity + $4B 全部投給 CPO 供應鏈（另 $2B 給 COHR）暗示 Nvidia 正在建構非單一依賴"
         kill_condition: "Nvidia 宣布自製 InP 或併購光元件廠"
         current_status: "🟡"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "External InP dependency confirmed; $4B total CPO supply chain investment ($2B LITE + $2B COHR, both nonexclusive); COHR OFC2026 CPO demo uses external InP laser source → InP still required; Nvidia building multi-vendor supply chain, NOT going vertical"
 
       - id: H-1E-leaf-3
@@ -326,7 +326,7 @@ branches:
         conclusion: "Nvidia 新聞稿確認 mid-2028 量產（v1.1.0 認為 2027 底的假設錯誤——晚 12 個月）"
         kill_condition: "建廠延期 > 12 個月或 capex 超支 >25%"
         current_status: "🟡"  # 時程本身已是變數
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "mid-2028 ramp confirmed; $3.8B commit"
 
       - id: H-1E-leaf-4
@@ -337,7 +337,7 @@ branches:
         conclusion: "Ciena 22% + Google 21% 集中度顯示 Google 仍是核心客戶；但其他 hyperscaler 可能警覺 Nvidia 的 $2B 代表優先供貨順位"
         kill_condition: "任一 Top-3 hyperscaler 公開減少 LITE 採購或轉向替代供應商（COHR / AAOI）"
         current_status: "🟢"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "Google 21% (maintained); no defection reported"
 
   # ------------------------------------------
@@ -356,8 +356,8 @@ branches:
         conclusion: "當前共識 PT $637（MarketBeat）/ $637.21（14 位分析師）；僅 JPM $950 + Barclays $750 + Morgan Stanley $595 在寬區間。共識要到 $800 需 +26% 上修"
         kill_condition: "共識 PT 中位三個月內 ≥ $800"
         current_status: "🟡"
-        last_checked: 2026-04-19
-        last_value: "TipRanks avg $717 (11 Buy, 5 Hold); MarketBeat $637; BNP Paribas NEW $1,040; Craig Hallum NEW $900; CFRA NEW $790; JPM $950. Average rising ~$80 vs prior monitor, median est. $680-750 — below $800 kill threshold; watching closely"
+        last_checked: 2026-04-20
+        last_value: "TipRanks avg $717 (11B/5H) + MS raised $595→$710 (2026-04-20, Equal-Weight); est. avg ~$724; JPM $950/BNP $1040/CraigHallum $900/CFRA $790/Barclays $750. Consensus rising but ~$76 below $800 kill; watching weekly"
 
       - id: H-1F-leaf-2
         hypothesis: "EV/Rev 倍數壓縮到 < 20x 的觸發事件未在 12 個月內出現"
@@ -367,7 +367,7 @@ branches:
         conclusion: "EV/Rev 30x vs 同業 10.8x，2.8x 溢價。壓縮觸發：(a) hyperscaler 2026H2 capex 停止上修、(b) 任一單季 bookings QoQ 負成長、(c) CPO 取代速度超前預期"
         kill_condition: "單季 bookings QoQ 負成長；或 EV/Rev 跌破 20x"
         current_status: "🟢"
-        last_checked: 2026-04-19
+        last_checked: 2026-04-20
         last_value: "EV/Rev 30x; no compression trigger yet"
 
       - id: H-1F-leaf-3
@@ -378,8 +378,8 @@ branches:
         conclusion: "2026 合計 $700B（+67% YoY），75% AI = ~$450B；所有 hyperscaler 聲明『supply-constrained not demand-constrained』"
         kill_condition: "任一 Top-4 hyperscaler 2026H2 capex guidance 下修 >10%"
         current_status: "🟢"
-        last_checked: 2026-04-19
-        last_value: "$700B combined; supply-constrained across all"
+        last_checked: 2026-04-20
+        last_value: "$700B+ combined 2026 (no H2 down-revision as of 2026-04-20); supply-constrained; AMZN $200B / GOOG $185B / META $135B / MSFT $120B"
 
       - id: H-1F-leaf-4
         hypothesis: "52 週高點 $960 未被跌破後不再創新高（即已見頂）"
@@ -389,8 +389,8 @@ branches:
         conclusion: "52w 高 $960；現價 $862.84（距高點 −10%）；今日 −3.84% 顯示 profit-taking 已啟動"
         kill_condition: "股價突破 $960 且連續 5 日站上 $950"
         current_status: "🟡"
-        last_checked: 2026-04-19
-        last_value: "Close $889.17 (4/17 Fri); intraday high $920.88; headline 'soars to all-time high on 66% PT hike'; 52w high $960; kill needs 5 consecutive closes >$950 — not yet triggered; approaching zone"
+        last_checked: 2026-04-20
+        last_value: "4/17 close $894.07; 4/20 predicted open ~$890.36; 52w high $960; current ~$66 below kill zone $960; need 5 consecutive closes >$950 — not triggered; monitoring daily"
 
       - id: H-1F-leaf-5
         hypothesis: "2023 Ciena 砍單 precedent 不重演"
@@ -400,8 +400,8 @@ branches:
         conclusion: "2023 Ciena 庫存調整直接讓 LITE miss Q2 財測；當時 Ciena ~10% 集中度；現在 Ciena 22%——規模放大 2x，衝擊敏感度加劇"
         kill_condition: "Ciena 宣布 AI infra 採購 pause 或庫存調整"
         current_status: "🟡"
-        last_checked: 2026-04-19
-        last_value: "2023 precedent triggered at 10% concentration; current 22%"
+        last_checked: 2026-04-20
+        last_value: "2023 precedent triggered at 10% concentration; current 22%; Ciena Q1 FY26 +33% YoY $1.43B, 'essentially sold out,' $5B backlog (2026-04) — no inventory pause, kill NOT triggered; positive short-term signal"
 
 # ============================================
 # Step 5 — 情景估值 × 市場隱含概率（v2.0 重算）
@@ -447,22 +447,22 @@ scenarios:
     change_from_v110: "+10pp"
 
 valuation:
-  current_price: 889.17  # 2026-04-17 (Fri) close; intraday high $920.88
-  consensus_pt_median: 717  # TipRanks avg $717 (11B/5H); MarketBeat $637; rising post BNP $1040/CraigHallum $900/CFRA $790 upgrades
+  current_price: 894.07  # 2026-04-17 (Fri) close (src: search 2026-04-20); Apr 20 predicted open ~$890
+  consensus_pt_median: 724  # TipRanks avg $717 + MS $595→$710 (2026-04-20); est. 17-analyst avg ~$724; still below $800 kill
   consensus_pt_range: "455 - 1040"
-  analyst_coverage: "16 analysts, Buy/Mod-Buy consensus; 3 new upgrades this week"
-  expected_value: -198  # EV = 0.25×1000 + 0.45×680 + 0.30×450 = 250+306+135 = 691; EV - P0 = 691 - 889.17 = -198.17
-  expected_value_pct: -22.3
-  risk_reward_ratio: 0.25  # (1000-889.17)/(889.17-450) = 110.83/439.17
+  analyst_coverage: "17 analysts, Buy/Mod-Buy consensus; MS Equal-Weight raised $595→$710 (2026-04-20)"
+  expected_value: -203  # EV = 0.25×1000 + 0.45×680 + 0.30×450 = 250+306+135 = 691; EV - P0 = 691 - 894.07 = -203.07
+  expected_value_pct: -22.7
+  risk_reward_ratio: 0.24  # (1000-894.07)/(894.07-450) = 105.93/444.07
   mispricing_edge: |
-    🚨 v2.0 反向 edge（2026-04-19 更新，edge 持續擴大）：
-    • 我的 p_bull = 25% vs 市場隱含 p_bull ≈ 65.1%（差 −40.1pp，較上次 −37.5pp 繼續擴大）
+    🚨 v2.0 反向 edge（2026-04-20 更新，edge 持續擴大）：
+    • 我的 p_bull = 25% vs 市場隱含 p_bull ≈ 65.6%（差 −40.6pp，較上次 −40.1pp 繼續輕微擴大）
     • 市場幾乎把『牛市必然實現』定價完畢；任何非牛市路徑都是 re-rating
-    • EV/P = -22.3% → 按我機率權重，現價已偏貴 22%（較上次 -19.9% 惡化）
-    • R/R = 0.25x → 每賭 $1 上行對應 $4 下行（較上次 0.33x 惡化）
-    • 共識 PT TipRanks avg $717（上移但距現價 $889 仍 −19.4%），多數分析師共識仍大幅低於現價
-    • 新升評：BNP Paribas $1,040、Craig Hallum $900、CFRA $790——牛方聲音增多，但 median 估計 $680-750 仍低於 $800 kill
-    • 誠實結論：flat/trim/hedged-long 方向不變。近期分析師升評使牛方敘事更強，但我的機率框架不變直到 kill condition 觸發
+    • EV/P = -22.7% → 按我機率權重，現價已偏貴 22.7%（較上次 -22.3% 微幅惡化）
+    • R/R = 0.24x → 每賭 $1 上行對應 $4.18 下行（較上次 0.25x 微幅惡化）
+    • 共識 PT 估 ~$724（上移中；MS 今日升至 $710，但仍 Equal-Weight）；距現價 $894 仍 −19.0%
+    • 今日新事件：MS $595→$710（中性但上修），Ciena Q1 FY26 +33% YoY「sold out」——均不構成 kill
+    • 誠實結論：flat/trim/hedged-long 方向不變。共識 PT 緩升中，但距 $800 kill 仍需再漲 +10.5%
   notes: |
     v2.0 2026-04-15 重算。Bull 情景從 $900 上修至 $1000（JPM PT 錨點）。
     Bear 情景 $450 不變但機率從 20% 升至 30%（CPO 雙紅 + Ciena precedent）。
@@ -471,6 +471,9 @@ valuation:
     2026-04-19 更新：股價漲至 $889.17（+3.05%），三位新分析師升評（BNP $1,040/CraigHallum $900/CFRA $790），
     共識均價從 $637 升至 $717（TipRanks），但我的情景機率不變——反向 edge 持續擴大。
     市場隱含 p_bull 從 62.5% 升至 65.1%（+2.6pp），我的 p_bull 仍 25%，Δ = -40.1pp。
+    2026-04-20 更新：MS Equal-Weight PT $595→$710（今日），共識均值估 $724（+$7 vs 昨）；
+    Ciena Q1 FY26 強勁（+33% YoY，sold out，$5B backlog）——正面信號，2023 砍單劇本短期未重演；
+    市場隱含 p_bull ≈ 65.6%（+0.5pp），Δ = -40.6pp，反向 edge 繼續小幅擴大。
 
 # ============================================
 # 監控設定（v2.0 新增 PT consensus 追蹤）
@@ -506,13 +509,15 @@ scorecard:
   yellow: 11  # H-1A:5 + H-1B:1,2 + H-1C:2,4 + H-1D:5 + H-1E:2,3 + H-1F:1,4,5
   red: 3  # H-1D-1, H-1D-2, H-1E-1 (Nvidia nonexclusive confirmed as red)
   total_leaves: 27  # v2.0.0 實際 6 主幹 5+3+4+6+4+5=27；原 24 為計數錯誤，今日修正
-  last_updated: 2026-04-19
+  last_updated: 2026-04-20
   notes: |
     v2.0.0: 🔴 三片已觸發（CPO 雙紅 + Nvidia nonexclusive 揭露）；🟡 11 片為待觀察/過渡態。
     H-0 未死，但方向 FLIP 為 flat/減倉——因為在反向 edge 下，即使 H-0 (long 版) 能存活，expected value 仍為負。
     這是 90s 方法論的核心：H-0 的『可證偽性』與『持倉方向』是兩件事。
     2026-04-19 monitor: 無狀態翻轉。H-1F-leaf-1 接近 $800 kill zone（PT 均值 $717 上移中）；
     H-1F-leaf-4 接近 $960 突破觀察區（週高 $920.88）。scorecard 計數修正（原 24→27）。
+    2026-04-20 monitor: 零狀態翻轉。MS Equal-Weight PT $595→$710 推升共識均值估 $724，距 $800 kill 仍差 +$76；
+    Ciena Q1 FY26 +33% YoY「sold out」——正面信號，2023 砍單劇本短期未重演。持倉方向不變（flat/trim）。
 
 # 研究來源
 sources:
@@ -546,3 +551,12 @@ sources:
   - "AAOI $124M hyperscale orders (2026-04); stock +20% on $71M new order; YTD +147% (Blockonomi)"
   - "Fabrinet FN Q2 FY26 record revenue $1.133B (+36% YoY); optical comms $833M (+29%) (multiple sources)"
   - "IDTechEx CPO market forecast: $20B by 2036, 37% CAGR (semiconductor-today.com)"
+  # 2026-04-20 monitor 新增來源
+  - "Morgan Stanley LITE PT raised $595→$710 (Equal-Weight maintained), 2026-04-20 (GuroFocus/MarketBeat)"
+  - "Ciena Q1 FY2026 earnings: revenue +33% YoY to $1.43B, 'essentially sold out,' $5B backlog, inventory turns 3.2x (investor.ciena.com 2026-04)"
+  - "Coherent (COHR) Q2 2026: revenue $1.69B (+17% YoY), data center +33.6% to $1.2B, trading $343.91 on 2026-04-20 (Yahoo Finance)"
+  - "Hyperscaler 2026 capex confirmed ~$700B+, no H2 down-revision as of 2026-04-20 (CNBC/Futurum/CreditSights)"
+  - "AAOI $124M hyperscale orders, +147% YTD (Blockonomi 2026-04)"
+  - "Fabrinet FN Q2 FY26 record revenue $1.133B (+36% YoY), optical comms $833M (+29%) (multiple sources)"
+  - "CPO commercialization advancing 2026; Nvidia Spectrum-X Photonics platform H2 2026 on track (Tom's Hardware/EDN)"
+  - "LITE Apr 17 close $894.07, Apr 20 predicted open $890.36 (stockinvest.us / search)"
