@@ -6,7 +6,7 @@ ticker: LITE
 company_name: "Lumentum Holdings Inc."
 version: 2.0.0
 created: 2026-04-14
-updated: 2026-04-22
+updated: 2026-04-23
 changelog:
   - v1.0.0 (2026-04-14): 初始樹建立，四主幹，17 leaves
   - v1.1.0 (2026-04-14): 補足 🟡 資料、CPO 雙紅燈觸發、加入 Nvidia $2B 與 InP-to-CPO 新葉子
@@ -356,8 +356,8 @@ branches:
         conclusion: "當前共識 PT $637（MarketBeat）/ $637.21（14 位分析師）；僅 JPM $950 + Barclays $750 + Morgan Stanley $595 在寬區間。共識要到 $800 需 +26% 上修"
         kill_condition: "共識 PT 中位三個月內 ≥ $800"
         current_status: "🟡"
-        last_checked: 2026-04-22
-        last_value: "Citi raised $800→$1,100 (Buy) 2026-04-21; Northland $775→$1,000 (4/17); MS $595→$710 (4/20); est. avg ~$742 (18 analysts); median ~$710–$740; JPM $950/BNP $1040/CH $900/CFRA $790/Barclays $750. Still ~$60–$90 below $800 kill; no new upgrades 4/22; watching weekly"
+        last_checked: 2026-04-23
+        last_value: "4/23 新增：Susquehanna $550→$1,100 (Positive); TD Cowen $675→$875 (Hold, 4/10); Mizuho $750→$930 (Outperform, 4/8). 既有：Citi $1,100 (4/21); Northland $1,000 (4/17); JPM $950; BNP $1,040 (4/16); Craig Hallum $900; Mizuho $930; MS $710 (4/20); CFRA $790; Barclays $750. Est. avg ~$757–$761 (19+ analysts); median ~$735–$760; ⚠️ 接近 $800 kill zone，距觸發差 $40–$65; 下一個大幅升評即可能觸發"
 
       - id: H-1F-leaf-2
         hypothesis: "EV/Rev 倍數壓縮到 < 20x 的觸發事件未在 12 個月內出現"
@@ -389,8 +389,8 @@ branches:
         conclusion: "52w 高 $960；現價 $862.84（距高點 −10%）；今日 −3.84% 顯示 profit-taking 已啟動"
         kill_condition: "股價突破 $960 且連續 5 日站上 $950"
         current_status: "🟡"
-        last_checked: 2026-04-22
-        last_value: "4/22 est. ~$853 (+0.5% DoD est.); 52w high $960; now ~$107 below kill zone $960 (11.2%); no breakout signal; monitoring daily"
+        last_checked: 2026-04-23
+        last_value: "4/21 confirmed close $836.92 (−5.1%); 4/22 est. close ~$873 (+4.4%, Susquehanna/Citi 升評消化); 4/23 intraday 資料不足; 52w high $960; 距 kill zone ~$87 (9.1%); no breakout signal"
 
       - id: H-1F-leaf-5
         hypothesis: "2023 Ciena 砍單 precedent 不重演"
@@ -447,31 +447,35 @@ scenarios:
     change_from_v110: "+10pp"
 
 valuation:
-  current_price: 853  # 2026-04-22 est. ~$853 (WebSearch; April 21 close $836–$848 per sources; DoD est. +0.5% vs tree $848.4)
-  consensus_pt_median: 742  # est. avg after Citi $800→$1,100 (Buy) 2026-04-21; Northland $775→$1,000 (4/17); 18 analysts ~$742 avg; median ~$710-$740; still below $800 kill
+  current_price: 873  # 2026-04-23: April 21 confirmed close $836.92; April 22 est. close ~$873 (+4.4%); April 23 intraday 資料不足
+  consensus_pt_median: 745  # est. after 4/23 adds: Susquehanna $550→$1,100 (Positive); Mizuho $750→$930 (4/8); TD Cowen $675→$875 (4/10); est. avg ~$757-$761 (19+ analysts); median ~$735-$760; ⚠️ approaching $800 kill
   consensus_pt_range: "455 - 1100"
-  analyst_coverage: "18 analysts est., Buy consensus; Citi raised $800→$1,100 Buy (2026-04-21); Northland raised $775→$1,000 (2026-04-17); MS Equal-Weight raised $595→$710 (2026-04-20); no new changes 2026-04-22"
-  expected_value: -162  # EV = 0.25×1000 + 0.45×680 + 0.30×450 = 691; EV - P0 = 691 - 853 = -162
-  expected_value_pct: -19.0
-  risk_reward_ratio: 0.36  # (1000-853)/(853-450) = 147/403 = 0.365
+  analyst_coverage: "19+ analysts est., Buy consensus; NEW 4/23: Susquehanna $550→$1,100 (Positive); NEW 4/8: Mizuho $750→$930 (Outperform); NEW 4/10: TD Cowen $675→$875 (Hold); prior: Citi $1,100 (4/21); Northland $1,000 (4/17); JPM $950; BNP $1,040 (4/16); Craig Hallum $900; CFRA $790; Barclays $750; MS $710 (4/20)"
+  expected_value: -182  # EV = 0.25×1000 + 0.45×680 + 0.30×450 = 691; EV - P0 = 691 - 873 = -182
+  expected_value_pct: -20.9
+  risk_reward_ratio: 0.30  # (1000-873)/(873-450) = 127/423 = 0.300
   mispricing_edge: |
-    🚨 v2.0 反向 edge（2026-04-22 更新，股價微幅回升，edge 略差但方向不變）：
-    • 我的 p_bull = 25% vs 市場隱含 p_bull ≈ 60.0%（差 −35pp；較昨日 −36.1pp 微幅改善）
-    • EV/P = −19.0% → 按我機率權重，現價仍偏貴 19.0%（昨日 −18.6%；股價微升使 edge 略差）
-    • R/R = 0.36x → 每賭 $1 上行對應 $2.74 下行（昨日 0.38x；股價回升 R/R 略降，仍 < 0.5x）
-    • 共識 PT avg 估 ~$742（截至 2026-04-21 Citi $1,100 後）；今日無新升/降評
-    • 今日觀察：AMD+GlobalFoundries MI500 CPO（MRM 技術，仍需 InP 外部雷射）；Broadcom TH6-Davisson 量產確認
-    • 誠實結論：flat/trim/hedged-long 方向不變。CPO 生態系擴張強化 InP 需求（短期），但長期替代壓力累積
+    🚨 v2.0 反向 edge（2026-04-23 更新，股價升至 ~$873，edge 惡化）：
+    • 我的 p_bull = 25% vs 市場隱含 p_bull ≈ 63.5%（差 −38.5pp；較昨日 −35pp 惡化 3.5pp）
+    • EV/P = −20.9% → 按我機率權重，現價仍偏貴 20.9%（昨日 −19.0%；股價 +4.4% 使 edge 顯著惡化）
+    • R/R = 0.30x → 每賭 $1 上行對應 $3.33 下行（昨日 0.36x；R/R 大幅惡化，距 0.5x 門檻越來越遠）
+    • 共識 PT avg 估 ~$757–$761（加入 Susquehanna $1,100, Mizuho $930, TD Cowen $875 後更新）；median ~$735–$760；距 $800 kill 差 $40–$65
+    • ⚠️ H-1F-leaf-1 接近 kill zone：再 1-2 個大幅升評即可能觸發
+    • 今日觀察：Peregrine Capital 減持 LITE（機構賣壓）；Silicon Photonics CPO 趨勢文章再確認；四大 hyperscaler 4/29 財報（倒數 6 天）
+    • 誠實結論：flat/trim/hedged-long 方向不變但 edge 顯著惡化，R/R 0.30x 為自 v2.0 以來最差
   notes: |
     v2.0 2026-04-15 重算。Bull 情景 $1000 / Base $680 / Bear $450。
     市場隱含解法錨定 p_base=0.30、p_bear=0.075（16+ 家分析師 PT 離散度大）。
     2026-04-19：BNP $1,040 / CraigHallum $900 / CFRA $790 升評，共識 avg $717。
     2026-04-20：MS $595→$710（Equal-Weight），共識 avg est. $724；Ciena Q1 +33% YoY sold out。
-    2026-04-21：Citi $800→$1,100（Buy，最高目標價）；股價 −5.1% 至 ~$848；
+    2026-04-21：Citi $800→$1,100（Buy，最高目標價）；股價 −5.1% 至 ~$837（confirmed $836.92）；
     市場 p_bull ≈ 61.1%（−4.5pp vs 昨），Δ = −36.1pp；R/R 0.24→0.38 改善但仍 < 0.5x。
     Q3 FY26 財報 5/5/2026——下一個重要觸媒，關注 bookings QoQ 數字。
-    2026-04-22：無新升/降評；股價 ~$853（微升 +0.5% est.）；AMD+GF MI500 CPO 宣布（MRM 技術）；
-    Broadcom TH6-Davisson 量產確認；EV/P −19.0%，R/R 0.36x；持倉方向不變（flat/trim）。
+    2026-04-22：股價 +4.4% 至 ~$873（confirmed via MarketBeat alert）；AMD+GF MI500 CPO 宣布（MRM 技術）；Broadcom TH6-Davisson 量產確認；tree 當日估值 lag（$853 估計偏低）。
+    2026-04-23：Susquehanna $550→$1,100 (Positive) 新增；Mizuho $750→$930 (4/8)、TD Cowen $675→$875 (4/10) 補登；
+    共識 avg ~$757–$761（19+ analysts）；Silicon Photonics "Beyond the Electrical Wall" 文章確認 CPO 趨勢；
+    Peregrine Capital 減持 LITE（機構賣壓信號）；四大 hyperscaler 全於 4/29 公布 Q1 2026 財報；
+    EV/P −20.9%，R/R 0.30x（v2.0 以來最差），edge −38.5pp；持倉方向不變（flat/trim）。
 
 # ============================================
 # 監控設定（v2.0 新增 PT consensus 追蹤）
@@ -507,7 +511,7 @@ scorecard:
   yellow: 11  # H-1A:5 + H-1B:1,2 + H-1C:2,4 + H-1D:5 + H-1E:2,3 + H-1F:1,4,5
   red: 3  # H-1D-1, H-1D-2, H-1E-1 (Nvidia nonexclusive confirmed as red)
   total_leaves: 27  # v2.0.0 實際 6 主幹 5+3+4+6+4+5=27；原 24 為計數錯誤，今日修正
-  last_updated: 2026-04-22
+  last_updated: 2026-04-23
   notes: |
     v2.0.0: 🔴 三片已觸發（CPO 雙紅 + Nvidia nonexclusive 揭露）；🟡 11 片為待觀察/過渡態。
     H-0 未死，但方向 FLIP 為 flat/減倉——因為在反向 edge 下，即使 H-0 (long 版) 能存活，expected value 仍為負。
@@ -517,12 +521,17 @@ scorecard:
     2026-04-20 monitor: 零狀態翻轉。MS Equal-Weight PT $595→$710 推升共識均值估 $724，距 $800 kill 仍差 +$76；
     Ciena Q1 FY26 +33% YoY「sold out」——正面信號，2023 砍單劇本短期未重演。持倉方向不變（flat/trim）。
     2026-04-21 monitor: 零狀態翻轉。Citi $800→$1,100（Buy）最強升評——共識 avg 估升至 ~$742，
-    但中位 ~$710–$740 仍低於 $800 kill；股價 −5.1% 至 ~$848（稀釋疑慮 + Q3 前平倉）；
+    但中位 ~$710–$740 仍低於 $800 kill；股價 −5.1% 至 ~$837（confirmed $836.92）；
     R/R 0.24→0.38 改善（因股價回落），edge 收窄 −4.5pp 至 −36.1pp；Q3 FY26 財報訂 5/5。持倉方向不變。
     2026-04-22 monitor: 零狀態翻轉。AMD+GlobalFoundries MI500 CPO（MRM-based，仍需 InP 外部雷射）——
     H-1D-leaf-5 kill NOT 觸發；Broadcom TH6-Davisson 量產出貨確認（H-1D-leaf-2 🔴 持續）；
-    股價 ~$853（+0.5% DoD est.）；無新升/降評；EV/P −19.0%，R/R 0.36x，edge −35pp（微幅收窄）；
+    股價 ~$873（+4.4% confirmed，前日 $836.92）；無新升/降評；EV/P −19.0%（基於$853 lag），R/R 0.36x；
     hyperscaler capex 無下修信號；Q3 FY26 財報 5/5（倒數 13 天）。持倉方向不變（flat/trim）。
+    2026-04-23 monitor: 零狀態翻轉。Susquehanna $550→$1,100 (Positive) 新增；Mizuho/TD Cowen 升評補登；
+    共識 avg ~$757–$761（19+ analysts）；median ~$735–$760（距 $800 kill 差 $40–$65，⚠️ 接近）；
+    Silicon Photonics "Beyond the Electrical Wall" (4/23) 確認 CPO 趨勢；Peregrine Capital 減持 LITE；
+    四大 hyperscaler 全於 4/29 公布 Q1 2026 財報（重要觸媒）；4/23 股價資料不足，使用 4/22 est. $873；
+    EV/P −20.9%，R/R 0.30x（v2.0 以來最差），edge −38.5pp；持倉方向不變（flat/trim）。
 
 # 研究來源
 sources:
@@ -578,3 +587,15 @@ sources:
   - "LITE 2026-04-22 est. price ~$853 (WebSearch; April 21 close per sources $836-848; DoD +0.5% vs tree); 52w high $960; no breakout"
   - "Hyperscaler 2026 capex: Amazon $200B, Alphabet $175-185B, Meta $115-135B, MSFT $120B+; no H2 down-revision (Axios/CNBC 2026-04-22)"
   - "No new LITE analyst upgrades/downgrades on 2026-04-22; est. consensus avg ~$742 (per 2026-04-21 data)"
+  # 2026-04-23 monitor 新增來源
+  - "LITE April 21 confirmed close $836.92 (-5.1%); April 22 +4.4% to ~$873 (MarketBeat alert: marketbeat.com/instant-alerts/lumentum-nasdaqlite-shares-up-44-after-analyst-upgrade-2026-04-22/)"
+  - "Susquehanna raises LITE PT $550→$1,100 (Positive rating), April 2026 (themarketsdaily.com/2026/04/22/lumentum-nasdaqlite-shares-up-4-4-after-analyst-upgrade.html)"
+  - "TD Cowen raises LITE PT $675→$875 (Hold), 2026-04-10 (multiple sources)"
+  - "Mizuho raises LITE PT $750→$930 (Outperform), 2026-04-08 (multiple sources)"
+  - "LITE consensus PT avg updated ~$757-$761 (19+ analysts) per April 23 search; median ~$735-$760; approaching $800 kill zone"
+  - "'Beyond the Electrical Wall: The Shift to Silicon Photonics in AI' (April 23, 2026): CPO/SiPh substitution trend confirmed (science-technology.news-articles.net/content/2026/04/23/)"
+  - "Peregrine Capital Management LLC Trims Position in Lumentum Holdings Inc. $LITE (April 23, 2026; dailypolitical.com/2026/04/23/peregrine-capital-management-llc-trims-position-in-lumentum-holdings-inc-lite.html)"
+  - "Coherent Corp. (COHR) PT raised to $420 from $250 at Citi, April 21, 2026; Q3 FY2026 results scheduled May 6, 2026 (financialcontent.com)"
+  - "Meta/Google/Amazon/Microsoft Q1 2026 earnings ALL scheduled April 29, 2026 — capex guidance update imminent (chipstrat.com / S&P Global)"
+  - "LITE Northland FY2027 EPS forecast raised to $14.59 from $10.69 alongside $775→$1,000 PT (multiple sources, April 2026)"
+  - "Hyperscaler 2026 combined capex ~$700B confirmed; no H2 down-revision as of April 23; Amazon $200B, Alphabet $175-185B, Meta $115-135B, MSFT $110-120B (Axios/CNBC/CreditSights)"
