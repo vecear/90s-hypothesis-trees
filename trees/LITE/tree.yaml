@@ -6,7 +6,7 @@ ticker: LITE
 company_name: "Lumentum Holdings Inc."
 version: 2.0.0
 created: 2026-04-14
-updated: 2026-04-23
+updated: 2026-04-26
 changelog:
   - v1.0.0 (2026-04-14): 初始樹建立，四主幹，17 leaves
   - v1.1.0 (2026-04-14): 補足 🟡 資料、CPO 雙紅燈觸發、加入 Nvidia $2B 與 InP-to-CPO 新葉子
@@ -356,8 +356,8 @@ branches:
         conclusion: "當前共識 PT $637（MarketBeat）/ $637.21（14 位分析師）；僅 JPM $950 + Barclays $750 + Morgan Stanley $595 在寬區間。共識要到 $800 需 +26% 上修"
         kill_condition: "共識 PT 中位三個月內 ≥ $800"
         current_status: "🟡"
-        last_checked: 2026-04-23
-        last_value: "4/23 新增：Susquehanna $550→$1,100 (Positive); TD Cowen $675→$875 (Hold, 4/10); Mizuho $750→$930 (Outperform, 4/8). 既有：Citi $1,100 (4/21); Northland $1,000 (4/17); JPM $950; BNP $1,040 (4/16); Craig Hallum $900; Mizuho $930; MS $710 (4/20); CFRA $790; Barclays $750. Est. avg ~$757–$761 (19+ analysts); median ~$735–$760; ⚠️ 接近 $800 kill zone，距觸發差 $40–$65; 下一個大幅升評即可能觸發"
+        last_checked: 2026-04-26
+        last_value: "4/26 確認：共識 avg $757.25（MarketBeat，19+ analysts，1 Strong Buy / 10 Buy / 7 Hold）；新增追蹤 Needham $850、Stifel Nicolaus $800；既有：Susquehanna $1,100、Citi $1,100、BNP $1,040、Northland $1,000、JPM $950、Mizuho $930、Craig Hallum $900、TD Cowen $875、CFRA $790、Barclays $750、MS $710；median ~$735–$760；距 $800 kill zone 差 ~$43；4/24-4/25 無新升降評；4/29 hyperscaler 財報後若分析師集體上修可能迅速觸發"
 
       - id: H-1F-leaf-2
         hypothesis: "EV/Rev 倍數壓縮到 < 20x 的觸發事件未在 12 個月內出現"
@@ -389,8 +389,8 @@ branches:
         conclusion: "52w 高 $960；現價 $862.84（距高點 −10%）；今日 −3.84% 顯示 profit-taking 已啟動"
         kill_condition: "股價突破 $960 且連續 5 日站上 $950"
         current_status: "🟡"
-        last_checked: 2026-04-23
-        last_value: "4/21 confirmed close $836.92 (−5.1%); 4/22 est. close ~$873 (+4.4%, Susquehanna/Citi 升評消化); 4/23 intraday 資料不足; 52w high $960; 距 kill zone ~$87 (9.1%); no breakout signal"
+        last_checked: 2026-04-26
+        last_value: "4/24（週五）est. close ~$877 (+4.1% DoD, intraday high $896.11 / low $829.13); 4/22 confirmed close ~$873; 52w high $960; 距 kill zone ~$83 (9.5%); no breakout signal; 週末（4/25-4/26）無交易"
 
       - id: H-1F-leaf-5
         hypothesis: "2023 Ciena 砍單 precedent 不重演"
@@ -447,22 +447,22 @@ scenarios:
     change_from_v110: "+10pp"
 
 valuation:
-  current_price: 873  # 2026-04-23: April 21 confirmed close $836.92; April 22 est. close ~$873 (+4.4%); April 23 intraday 資料不足
-  consensus_pt_median: 745  # est. after 4/23 adds: Susquehanna $550→$1,100 (Positive); Mizuho $750→$930 (4/8); TD Cowen $675→$875 (4/10); est. avg ~$757-$761 (19+ analysts); median ~$735-$760; ⚠️ approaching $800 kill
-  consensus_pt_range: "455 - 1100"
-  analyst_coverage: "19+ analysts est., Buy consensus; NEW 4/23: Susquehanna $550→$1,100 (Positive); NEW 4/8: Mizuho $750→$930 (Outperform); NEW 4/10: TD Cowen $675→$875 (Hold); prior: Citi $1,100 (4/21); Northland $1,000 (4/17); JPM $950; BNP $1,040 (4/16); Craig Hallum $900; CFRA $790; Barclays $750; MS $710 (4/20)"
-  expected_value: -182  # EV = 0.25×1000 + 0.45×680 + 0.30×450 = 691; EV - P0 = 691 - 873 = -182
-  expected_value_pct: -20.9
-  risk_reward_ratio: 0.30  # (1000-873)/(873-450) = 127/423 = 0.300
+  current_price: 877  # 2026-04-26: April 24 est. close ~$877 (+4.1% DoD, intraday high $896.11 / low $829.13); 週末（4/25-4/26）無交易
+  consensus_pt_median: 757  # 4/26 確認：MarketBeat avg $757.25（19+ analysts）；新增 Needham $850, Stifel $800；median ~$735–$760；distance to $800 kill = ~$43
+  consensus_pt_range: "385 - 1100"
+  analyst_coverage: "19+ analysts, Moderate Buy consensus; 4/26 confirmed avg $757.25; NEW tracking: Needham $850, Stifel $800; 4/23: Susquehanna $550→$1,100 (Positive); 4/21: Citi $800→$1,100 (Buy); 4/17: Northland $775→$1,000 (Buy); 4/16: BNP $625→$1,040 (Outperform), Craig Hallum $600→$900 (Buy); 4/10: TD Cowen $675→$875 (Hold); 4/9: JPM →$950 (Overweight); 4/8: Mizuho $750→$930 (Outperform); 4/20: MS $595→$710 (Equal-Weight); CFRA $790; Barclays $750"
+  expected_value: -186  # EV = 0.25×1000 + 0.45×680 + 0.30×450 = 691; EV - P0 = 691 - 877 = -186
+  expected_value_pct: -21.2
+  risk_reward_ratio: 0.29  # (1000-877)/(877-450) = 123/427 = 0.288
   mispricing_edge: |
-    🚨 v2.0 反向 edge（2026-04-23 更新，股價升至 ~$873，edge 惡化）：
-    • 我的 p_bull = 25% vs 市場隱含 p_bull ≈ 63.5%（差 −38.5pp；較昨日 −35pp 惡化 3.5pp）
-    • EV/P = −20.9% → 按我機率權重，現價仍偏貴 20.9%（昨日 −19.0%；股價 +4.4% 使 edge 顯著惡化）
-    • R/R = 0.30x → 每賭 $1 上行對應 $3.33 下行（昨日 0.36x；R/R 大幅惡化，距 0.5x 門檻越來越遠）
-    • 共識 PT avg 估 ~$757–$761（加入 Susquehanna $1,100, Mizuho $930, TD Cowen $875 後更新）；median ~$735–$760；距 $800 kill 差 $40–$65
-    • ⚠️ H-1F-leaf-1 接近 kill zone：再 1-2 個大幅升評即可能觸發
-    • 今日觀察：Peregrine Capital 減持 LITE（機構賣壓）；Silicon Photonics CPO 趨勢文章再確認；四大 hyperscaler 4/29 財報（倒數 6 天）
-    • 誠實結論：flat/trim/hedged-long 方向不變但 edge 顯著惡化，R/R 0.30x 為自 v2.0 以來最差
+    🚨 v2.0 反向 edge（2026-04-26 更新，股價 ~$877，edge 持續惡化）：
+    • 我的 p_bull = 25% vs 市場隱含 p_bull ≈ 65.1%（差 −40.1pp；較 4/23 −38.5pp 惡化 1.6pp）
+    • EV/P = −21.2% → 現價仍偏貴 21.2%（4/23：−20.9%；股價 +4.1% 使 edge 略惡化）
+    • R/R = 0.29x → 每賭 $1 上行對應 $3.47 下行（4/23：0.30x；R/R 惡化，v2.0 以來最差）
+    • 共識 PT avg $757.25（MarketBeat 4/26 確認）；新增 Needham $850, Stifel $800；median ~$735–$760；距 $800 kill 差 ~$43
+    • ⚠️ H-1F-leaf-1 仍在 kill zone 外但距離縮小：$43 差距，4/29 hyperscaler 財報後若分析師集體上修易觸發
+    • 今日觀察（週末）：無新聞，最重大觸媒為 4/29 Meta/Alphabet/Amazon/Microsoft 全在同日公布 Q1 2026 財報
+    • 誠實結論：flat/trim/hedged-long 方向不變；R/R 0.29x 為 v2.0 以來最差，建議密切關注 4/29 財報
   notes: |
     v2.0 2026-04-15 重算。Bull 情景 $1000 / Base $680 / Bear $450。
     市場隱含解法錨定 p_base=0.30、p_bear=0.075（16+ 家分析師 PT 離散度大）。
@@ -511,7 +511,7 @@ scorecard:
   yellow: 11  # H-1A:5 + H-1B:1,2 + H-1C:2,4 + H-1D:5 + H-1E:2,3 + H-1F:1,4,5
   red: 3  # H-1D-1, H-1D-2, H-1E-1 (Nvidia nonexclusive confirmed as red)
   total_leaves: 27  # v2.0.0 實際 6 主幹 5+3+4+6+4+5=27；原 24 為計數錯誤，今日修正
-  last_updated: 2026-04-23
+  last_updated: 2026-04-26
   notes: |
     v2.0.0: 🔴 三片已觸發（CPO 雙紅 + Nvidia nonexclusive 揭露）；🟡 11 片為待觀察/過渡態。
     H-0 未死，但方向 FLIP 為 flat/減倉——因為在反向 edge 下，即使 H-0 (long 版) 能存活，expected value 仍為負。
@@ -532,6 +532,12 @@ scorecard:
     Silicon Photonics "Beyond the Electrical Wall" (4/23) 確認 CPO 趨勢；Peregrine Capital 減持 LITE；
     四大 hyperscaler 全於 4/29 公布 Q1 2026 財報（重要觸媒）；4/23 股價資料不足，使用 4/22 est. $873；
     EV/P −20.9%，R/R 0.30x（v2.0 以來最差），edge −38.5pp；持倉方向不變（flat/trim）。
+    2026-04-26 monitor（週末）: 零狀態翻轉。LITE 4/24 est. close ~$877（+4.1% DoD，intraday $829–$896）；
+    共識 avg $757.25（MarketBeat 4/26 確認，19+ analysts，Moderate Buy）；新增追蹤 Needham $850, Stifel $800；
+    H-1F-leaf-1 距 $800 kill 差 ~$43（⚠️ 持續接近）；H-1F-leaf-4 距 $960 kill 差 ~$83（9.5%）；
+    4/29 hyperscaler 財報為本週最重大觸媒（Meta/Alphabet/Amazon/Microsoft 同日公布）；
+    若任一巨頭下修 H2 capex >10% → H-1F-leaf-3 kill；若集體升評 → H-1F-leaf-1 可能觸發；
+    EV/P −21.2%，R/R 0.29x（v2.0 以來最差），edge −40.1pp；持倉方向不變（flat/trim）。
 
 # 研究來源
 sources:
@@ -599,3 +605,10 @@ sources:
   - "Meta/Google/Amazon/Microsoft Q1 2026 earnings ALL scheduled April 29, 2026 — capex guidance update imminent (chipstrat.com / S&P Global)"
   - "LITE Northland FY2027 EPS forecast raised to $14.59 from $10.69 alongside $775→$1,000 PT (multiple sources, April 2026)"
   - "Hyperscaler 2026 combined capex ~$700B confirmed; no H2 down-revision as of April 23; Amazon $200B, Alphabet $175-185B, Meta $115-135B, MSFT $110-120B (Axios/CNBC/CreditSights)"
+  # 2026-04-26 monitor 新增來源（週末）
+  - "LITE April 24 est. close ~$877 (+4.1% DoD), intraday high $896.11 / low $829.13; YTD +128.34% (MarketBeat: marketbeat.com/instant-alerts/lumentum-nasdaqlite-stock-price-up-41-heres-why-2026-04-24/)"
+  - "LITE consensus PT avg confirmed $757.25 (MarketBeat / public.com 4/26, 1 Strong Buy / 10 Buy / 7 Hold); range $385–$1,092 (multiple sources)"
+  - "NEW analyst tracking: Needham PT $850 (early March 2026); Stifel Nicolaus PT $800 (March 2026) (multiple sources)"
+  - "Big Tech (Meta / Alphabet / Amazon / Microsoft) ALL reporting Q1 2026 earnings April 29, 2026 — capex guidance update imminent (Motley Fool: fool.com/investing/2026/04/26/meta-google-amazon-microsoft-and-sofi-all-report-o/)"
+  - "Meta 2026 capex guidance $115–135B; Alphabet $175–185B; Amazon $200B; MSFT increasing sequentially; analysts project $750B combined 5 hyperscalers (Invezz / CreditSights 4/25)"
+  - "CPO market $20B by 2036 at 37% CAGR (IDTechEx); no new disruption beyond prior tracking (IDTechEx / EDN 2026)"
