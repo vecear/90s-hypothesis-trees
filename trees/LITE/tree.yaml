@@ -6,7 +6,7 @@ ticker: LITE
 company_name: "Lumentum Holdings Inc."
 version: 2.0.0
 created: 2026-04-14
-updated: 2026-04-28
+updated: 2026-04-29
 changelog:
   - v1.0.0 (2026-04-14): 初始樹建立，四主幹，17 leaves
   - v1.1.0 (2026-04-14): 補足 🟡 資料、CPO 雙紅燈觸發、加入 Nvidia $2B 與 InP-to-CPO 新葉子
@@ -77,8 +77,8 @@ branches:
         conclusion: "Q3 FY26 guidance $805M 中位 = +85% YoY；2026 hyperscaler 合計 capex ~$700B（+67% YoY），Amazon $200B、Google $185B、Meta $135B"
         kill_condition: "連續兩季 YoY < 40%"
         current_status: "🟢"
-        last_checked: 2026-04-15
-        last_value: "Q3 FY26 guidance +85% YoY; 2026 capex +67% YoY confirmed"
+        last_checked: 2026-04-29
+        last_value: "4/29 Q1 2026 earnings: Meta capex ↑$125-145B(+$10B), Alphabet Cloud +63%/capex ↑$180-190B(+$5B), AWS +28%(13季最快), Azure +40%(加速); combined AI capex ~$625-670B 全面維持/上修"
 
       - id: H-1A-leaf-2
         hypothesis: "InP 雷射產能 allocation runway ≥ 18 個月"
@@ -356,8 +356,8 @@ branches:
         conclusion: "當前共識 PT $637（MarketBeat）/ $637.21（14 位分析師）；僅 JPM $950 + Barclays $750 + Morgan Stanley $595 在寬區間。共識要到 $800 需 +26% 上修"
         kill_condition: "共識 PT 中位三個月內 ≥ $800"
         current_status: "🟡"
-        last_checked: 2026-04-28
-        last_value: "4/28 更新：Investing.com avg $832.04 (23 analysts, high $1,225, low $455) — AVERAGE 已超 $800；TipRanks avg $776.40 (16 analysts: 11B/5H/0S); MarketBeat avg $757.25 (19+ analysts, Moderate Buy); median est. ~$780–800（⚠️ 接近 kill 邊緣但未確認中位 ≥ $800）. H-0 kill (4) 未正式觸發. 4/29 hyperscaler 財報後可能再有升評潮進一步推高中位. 既有高端：$1,225（新高端），Susquehanna $1,100, Citi $1,100, BNP $1,040, Northland $1,000, JPM $950, Mizuho $930, Craig Hallum $900, TD Cowen $875, Needham $850, Stifel $800, CFRA $790, Barclays $750, MS $710."
+        last_checked: 2026-04-29
+        last_value: "4/29 更新：Investing.com avg $832.04 (23 analysts, high $1,225); TipRanks avg $776.40 (16B/5H/0S); MarketBeat avg $757.25; median est. ~$780-800（H-0 kill #4 接近但未觸發）. 4/29 四大 hyperscaler 財報後升評潮預期 4/30 起啟動——若 5 家以上升 PT 至 ≥ $850，中位有機會突破 $800 kill. Trefis 4/29 發布 bear case PT $560. ⚠️ kill zone 緊張但本日未觸發."
 
       - id: H-1F-leaf-2
         hypothesis: "EV/Rev 倍數壓縮到 < 20x 的觸發事件未在 12 個月內出現"
@@ -378,8 +378,8 @@ branches:
         conclusion: "2026 合計 $700B（+67% YoY），75% AI = ~$450B；所有 hyperscaler 聲明『supply-constrained not demand-constrained』"
         kill_condition: "任一 Top-4 hyperscaler 2026H2 capex guidance 下修 >10%"
         current_status: "🟢"
-        last_checked: 2026-04-15
-        last_value: "$700B combined; supply-constrained across all"
+        last_checked: 2026-04-29
+        last_value: "4/29 Q1 2026 earnings confirmed/raised: Meta $125-145B(↑+$10B midpoint), Alphabet $180-190B(↑+$5B midpoint), Amazon ~$200B(confirmed), MSFT Azure +40%(quarterly capex $30.5B); combined ~$625-670B — kill condition NOT triggered; 全四大維持或上修"
 
       - id: H-1F-leaf-4
         hypothesis: "52 週高點 $960 未被跌破後不再創新高（即已見頂）"
@@ -389,8 +389,8 @@ branches:
         conclusion: "52w 高 $960；現價 $862.84（距高點 −10%）；今日 −3.84% 顯示 profit-taking 已啟動"
         kill_condition: "股價突破 $960 且連續 5 日站上 $950"
         current_status: "🟡"
-        last_checked: 2026-04-28
-        last_value: "4/22 close ~$873; 4/23 est. close ~$848; 4/24 close ~$877（+4.1%）; 4/27 close ~$860; 4/28 close $791.37（-8.0% DoD, 52w high $960, 距 kill zone $168.63 = 21.3%）; 大跌原因不明（無公司特定負面新聞，疑係 4/29 hyperscaler 財報前去風險操作）; kill condition 更遠"
+        last_checked: 2026-04-29
+        last_value: "4/28 close $791.37(-8.0%); 4/29 intraday range $780.48-$842.00, open $813.78, close est. ~$825(+4.2% DoD); AH potentially ~$850-870 post-hyperscaler results; 52w high $960, 距 kill zone $135 = 16.4%; kill condition 仍遠"
 
       - id: H-1F-leaf-5
         hypothesis: "2023 Ciena 砍單 precedent 不重演"
@@ -447,22 +447,22 @@ scenarios:
     change_from_v110: "+10pp"
 
 valuation:
-  current_price: 791.37  # 2026-04-28: closed $791.37 (-8.0% DoD); prior close ~$860; 52w high $960; 52w low $56.80
-  consensus_pt_median: 780  # 4/28 估算：Investing.com avg $832.04 (23 analysts, high $1,225, low $455); TipRanks avg $776.40; MarketBeat avg $757.25; median est. ~$780-800, 接近 $800 kill 但未確認超過
+  current_price: 825  # 2026-04-29: est. close ~$825 (+4.2% DoD vs $791.37); intraday range $780.48-$842.00, open $813.78; AH est. ~$850-870 post-hyperscaler results; 52w high $960; 52w low $56.80
+  consensus_pt_median: 782  # 4/29 估算：Investing.com avg $832.04 (23 analysts, high $1,225); TipRanks avg $776.40; MarketBeat avg $757.25; median est. ~$780-800; 4/29 升評潮預期 4/30 啟動，kill 邊緣; Trefis PT $560 (4/29 bear case)
   consensus_pt_range: "455 - 1225"
-  analyst_coverage: "23 analysts (Investing.com), avg $832.04; TipRanks 16 analysts avg $776.40 (11B/5H/0S); MarketBeat 19+ avg $757.25 (Moderate Buy). 4/28: 無新升/降評; 4/29 hyperscaler 財報後升評潮可能推動中位突破 $800. 既有高端：$1,225 (new high), Susquehanna $1,100, Citi $1,100, BNP $1,040, Northland $1,000, JPM $950, Mizuho $930, Craig Hallum $900, TD Cowen $875, Needham $850, Stifel $800. 前次新增 4/26: Needham $850, Stifel $800. 4/22: Susquehanna $550→$1,100; 4/21: Citi $800→$1,100; 4/20: MS $595→$710."
-  expected_value: -100  # EV = 0.25×1000 + 0.45×680 + 0.30×450 = 691; EV - P0 = 691 - 791.37 ≈ -100
-  expected_value_pct: -12.7
-  risk_reward_ratio: 0.61  # (1000-791.37)/(791.37-450) = 208.63/341.37 = 0.611
+  analyst_coverage: "4/29: TipRanks avg $776.40 (16B/5H/0S); MarketBeat avg $757.25; Investing.com avg $832.04 (23 analysts). 無新升/降評確認（4/29 財報後升評潮預計 4/30 起）. Trefis 發布 bear case $560. 高端依序：$1,225, Susquehanna $1,100, Citi $1,100, BNP $1,040, Northland $1,000, JPM $950, Mizuho $930, Craig Hallum $900, TD Cowen $875, Needham $850, Stifel $800, CFRA $790, Barclays $750, MS $710."
+  expected_value: -134  # EV = 0.25×1000 + 0.45×680 + 0.30×450 = 691; EV - P0 = 691 - 825 = -134
+  expected_value_pct: -16.2
+  risk_reward_ratio: 0.47  # (1000-825)/(825-450) = 175/375 = 0.467
   mispricing_edge: |
-    🚨 v2.0 反向 edge（2026-04-28 更新，股價 $791.37，-8.0% DoD，edge 顯著改善）：
-    • 我的 p_bull = 25% vs 市場隱含 p_bull ≈ 55.4%（差 −30.4pp；vs 4/27: −38.9pp，改善 +8.5pp）
-    • EV/P = −12.7% → 按我機率權重，現價偏貴 12.7%（vs 4/27: −21.2%，顯著改善）
-    • R/R = 0.61x → 每賭 $1 上行對應 $1.63 下行（vs 4/27: 0.29x；大幅改善，接近 0.5x 適中區間）
-    • 共識 PT：Investing.com avg $832 (23 analysts, high $1,225)；TipRanks avg $776；MarketBeat avg $757；median est. ~$780-800
-    • ⚠️ H-1F-leaf-1：AVERAGE 已過 $800（Investing.com $832），但中位 kill condition 尚未確認觸發
-    • 今日觀察：4/28 大跌 -8% 無明確公司特定催化，疑係 4/29 財報前去風險操作（GF Score 67/100 文章同日發布）
-    • 誠實結論：flat/trim/hedged-long 方向不變；R/R 0.61x 為 v2.0 以來最佳（≥0.5x 邊界）；等待 4/29 hyperscaler 財報 capex guidance 決定性驗證
+    🚨 v2.0 反向 edge（2026-04-29 更新，股價 est. $825，+4.2% DoD 反彈，edge 小幅惡化）：
+    • 我的 p_bull = 25% vs 市場隱含 p_bull ≈ 58.7%（差 −33.7pp；vs 4/28: −30.4pp，反彈後略微惡化 −3.3pp）
+    • EV/P = −16.2% → 按我機率權重，現價偏貴 16.2%（vs 4/28: −12.7%，因股價回升而惡化）
+    • R/R = 0.47x → 每賭 $1 上行對應 $2.14 下行（vs 4/28: 0.61x；回落至 0.5x 以下，short 空間略增）
+    • 共識 PT：TipRanks avg $776.40；MarketBeat avg $757.25；median est. ~$780-800；H-0 kill #4 接近但未觸發
+    • ⚠️ H-1F-leaf-1：4/29 四大 hyperscaler 財報全超預期且 capex 上修——預期 4/30 起分析師升評潮，kill zone 高風險
+    • 今日關鍵：Meta capex $125-145B(+$10B), Alphabet Cloud +63%/capex $180-190B(+$5B), AWS +28%(最快13季), Azure +40%(加速)——H-1F-leaf-3 kill NOT 觸發（全部維持/上修，非下修）
+    • 誠實結論：flat/trim/hedged-long 方向不變；但 H-0 kill #4 危機升級——若 4/30 起升評潮推動 median ≥ $800，必須 major version bump 並重評方向
   notes: |
     v2.0 2026-04-15 重算。Bull 情景 $1000 / Base $680 / Bear $450。
     市場隱含解法錨定 p_base=0.30、p_bear=0.075（16+ 家分析師 PT 離散度大）。
@@ -486,6 +486,10 @@ valuation:
     hyperscaler 合計 capex $630-700B 預期不變；4/29 四大財報（最重要觸媒）；LITE Q3 FY26 財報 5/5 倒數 7 天；
     EV/P −12.7%，R/R 0.61x（v2.0 以來最佳，接近 0.5x 有效邊界）；edge −30.4pp（改善 +8.5pp）；
     zero 狀態翻轉；持倉方向不變（flat/trim）。
+    2026-04-29：LITE 盤中反彈 est. +4.2% 至 ~$825（range $780.48-$842.00, open $813.78；AH est. ~$850-870）；四大 hyperscaler Q1 財報全超預期——Meta Revenue $56.3B(+33%)/capex ↑$125-145B；Alphabet Revenue $109.9B/Cloud +63%/capex ↑$180-190B；Amazon AWS +28%($37.6B, 13季最快)/capex ~$200B確認；Microsoft Azure +40%(加速)/Revenue $82.9B；combined capex ~$625-670B全面維持/上修——H-1F-leaf-3 kill NOT 觸發；
+    COHR ~$310.90（ATH $364.80 後回調，Q3 FY26 5/6 財報）；Trefis 發布 bear case「LITE to $560」；無新分析師升/降評（4/30起預期升評潮）；LITE Q3 FY26 財報 5/5 倒數 6 天；
+    EV/P −16.2%，R/R 0.47x（vs 4/28: 0.61x，因股價反彈而略微惡化）；edge −33.7pp（惡化 −3.3pp）；
+    zero 狀態翻轉；⚠️ H-0 kill #4 危機升級（4/30 升評潮若推動 median ≥ $800 則 major version bump）；持倉方向不變（flat/trim）。
 
 # ============================================
 # 監控設定（v2.0 新增 PT consensus 追蹤）
@@ -521,7 +525,7 @@ scorecard:
   yellow: 11  # H-1A:5 + H-1B:1,2 + H-1C:2,4 + H-1D:5 + H-1E:2,3 + H-1F:1,4,5
   red: 3  # H-1D-1, H-1D-2, H-1E-1 (Nvidia nonexclusive confirmed as red)
   total_leaves: 27  # v2.0.0 實際 6 主幹 5+3+4+6+4+5=27；原 24 為計數錯誤，今日修正
-  last_updated: 2026-04-28
+  last_updated: 2026-04-29
   notes: |
     v2.0.0: 🔴 三片已觸發（CPO 雙紅 + Nvidia nonexclusive 揭露）；🟡 11 片為待觀察/過渡態。
     H-0 未死，但方向 FLIP 為 flat/減倉——因為在反向 edge 下，即使 H-0 (long 版) 能存活，expected value 仍為負。
@@ -554,6 +558,10 @@ scorecard:
     COHR all-time high $364.80（4/22），H-1D-leaf-3 🟢 持續；Yole webinar CPO advancing，InP 仍必要；
     hyperscaler 4/29 四大財報倒數 1 天（最重大觸媒）；LITE Q3 FY26 財報 5/5 倒數 7 天；
     EV/P −12.7%，R/R 0.61x（v2.0 以來最佳，edge 改善 +8.5pp 至 −30.4pp）；持倉方向不變（flat/trim）。
+    2026-04-29 monitor: 零狀態翻轉。四大 hyperscaler Q1 2026 財報全超預期且 capex 全面維持/上修——Meta $56.3B(+33%)/capex ↑$125-145B；Alphabet $109.9B/Cloud +63%/capex ↑$180-190B；Amazon AWS +28%($37.6B)/capex ~$200B確認；MSFT Azure +40%/Revenue $82.9B——H-1F-leaf-3 🟢 kill NOT 觸發（歷史最強 hyperscaler 財報季）；
+    LITE 盤中反彈 est. +4.2% 至 ~$825（range $780.48-$842.00，open $813.78；AH est. ~$850-870）；COHR ~$310.90（ATH後回調，Q3 FY26 5/6）；Trefis bear case $560發布；無新升/降評（4/30起升評潮預期）；LITE Q3 FY26 財報 5/5 倒數 6 天；
+    ⚠️ H-0 kill #4 危機升級（hyperscaler capex 全面上修將在 4/30 起引發升評潮，median PT 有機會突破 $800）；
+    EV/P −16.2%，R/R 0.47x（vs 4/28: 0.61x，股價反彈後回落至 0.5x 以下）；edge −33.7pp（惡化 −3.3pp）；持倉方向不變（flat/trim）。
 
 # 研究來源
 sources:
@@ -647,3 +655,12 @@ sources:
   - "Yole Group webinar 2026-04-28: 'Co-Packaged Optics: Powering the Next Wave of AI Infrastructure' (yolegroup.com/press-release/co-packaged-optics-powering-the-next-wave-of-ai-infrastructures/)"
   - "heygotrade.com 'Mag 7 Earnings 2026: What to Watch Apr 29-30': Meta/Alphabet/Amazon/Microsoft all report April 29 after close (heygotrade.com/en/blog/mag-7-earnings-superweek-what-investors-need-to-watch/)"
   - "Hyperscaler 2026 combined capex: Meta $115-135B, Alphabet $175-185B, Amazon $200B, MSFT $120B+; Microsoft Azure backlog $80B (unfulfilled, power-constrained); combined $630-700B (Axios/CNBC/247wallst/Futurum 2026-04-28)"
+  # 2026-04-29 monitor 新增來源
+  - "Meta Q1 2026 earnings: Revenue $56.31B vs $55.45B est (+33% YoY); EPS $7.31 vs $6.79 est; Capex guidance raised to $125-145B (from $115-135B, +$10B midpoint); shares fell ~7% AH on user growth miss (CNBC cnbc.com/2026/04/29/meta-q1-earnings-report-2026.html)"
+  - "Alphabet Q1 2026 earnings: Revenue $109.9B vs $107B est; Google Cloud +63% to $20B (vs 48% prior); Capex raised to $180-190B (from $175-185B, +$5B midpoint) (CNBC cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html)"
+  - "Amazon Q1 2026 earnings: Net sales $181.5B (+17%); AWS $37.59B (+28% YoY, fastest in 3+ years); Operating income $23.9B (above $16.5-21.5B guidance); Capex ~$200B FY26 confirmed (CNBC cnbc.com/2026/04/29/amazon-amzn-q1-earnings-report-2026.html; stocktitan.net)"
+  - "Microsoft Q1 FY2026 earnings: Revenue $82.9B (+18%) beat; Azure +40% (accelerating from ~37-38%); Quarterly capex $30.5B ($19.4B cash P,P&E + $11.1B finance leases, +89% YoY) (constellationr.com/insights/news/microsoft-azure-revenue-40-q1)"
+  - "LITE April 29 intraday: range $780.48-$842.00, open $813.78; close est. ~$825 (+4.2% DoD vs $791.37); AH est. ~$850-870 (Benzinga reference $870 'at time of writing') (Yahoo Finance / Benzinga)"
+  - "Trefis 'Lumentum Stock To $560?' bear case analysis (2026-04-29, trefis.com/stock/lite/articles2/597768/lumentum-stock-to-560/2026-04-29)"
+  - "Coherent COHR trading ~$310.90 on 2026-04-29 (down from ATH $364.80 on 4/22); Q3 FY26 results May 6, 2026 (Yahoo Finance)"
+  - "24/7 Wall St. live coverage: 'Microsoft, Amazon, Alphabet, Meta All Report Minutes After the Bell Tonight!' (2026-04-29, 247wallst.com/investing/2026/04/29/live-microsoft-amazon-alphabet-meta-all-report-minutes-after-the-bell-tonight/)"
